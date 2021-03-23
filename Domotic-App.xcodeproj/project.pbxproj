@@ -3,27 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787BF3FDC478AE063E1D5201 /* Pods_Domotic_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */; };
 		91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C2260A5BD00095304B /* AppDelegate.swift */; };
 		91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C4260A5BD00095304B /* SceneDelegate.swift */; };
-		91E529C7260A5BD00095304B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C6260A5BD00095304B /* ViewController.swift */; };
-		91E529CA260A5BD00095304B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E529C8260A5BD00095304B /* Main.storyboard */; };
 		91E529CC260A5BD00095304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CB260A5BD00095304B /* Assets.xcassets */; };
 		91E529CF260A5BD00095304B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CD260A5BD00095304B /* LaunchScreen.storyboard */; };
+		91E529E0260A5CDC0095304B /* MenuTabBarContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529D8260A5CDC0095304B /* MenuTabBarContract.swift */; };
+		91E529E1260A5CDC0095304B /* MenuTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529D9260A5CDC0095304B /* MenuTabBarPresenter.swift */; };
+		91E529E2260A5CDC0095304B /* MenuTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529DA260A5CDC0095304B /* MenuTabBarBuilder.swift */; };
+		91E529E3260A5CDC0095304B /* MenuTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529DB260A5CDC0095304B /* MenuTabBarInteractor.swift */; };
+		91E529E4260A5CDC0095304B /* MenuTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529DC260A5CDC0095304B /* MenuTabBarView.swift */; };
+		91E529E5260A5CDC0095304B /* MenuTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E529DD260A5CDC0095304B /* MenuTabBarView.xib */; };
+		91E529E6260A5CDC0095304B /* MenuTabBarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529DE260A5CDC0095304B /* MenuTabBarEntity.swift */; };
+		91E529E7260A5CDC0095304B /* MenuTabBarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529DF260A5CDC0095304B /* MenuTabBarWireframe.swift */; };
+		91E529F0260A5D240095304B /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529EB260A5D240095304B /* BaseWireframe.swift */; };
+		91E529F1260A5D240095304B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529EC260A5D240095304B /* BaseViewController.swift */; };
+		91E529F2260A5D240095304B /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529ED260A5D240095304B /* BaseEntity.swift */; };
+		91E529F3260A5D240095304B /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529EE260A5D240095304B /* BaseInteractor.swift */; };
+		91E529F4260A5D240095304B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529EF260A5D240095304B /* BasePresenter.swift */; };
+		91E52A06260A617D0095304B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A04260A617D0095304B /* LoadingView.xib */; };
+		91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A05260A617D0095304B /* LoadingViewController.swift */; };
+		91E52A0C260A64440095304B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A0B260A64440095304B /* Localizable.strings */; };
+		91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A0F260A648A0095304B /* UIImageViewExtension.swift */; };
+		91E52A15260A648A0095304B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A10260A648A0095304B /* UIColorExtension.swift */; };
+		91E52A17260A648A0095304B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A12260A648A0095304B /* UIViewControllerExtension.swift */; };
+		91E52A18260A648A0095304B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A13260A648A0095304B /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.debug.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug.xcconfig"; sourceTree = "<group>"; };
 		91E529BF260A5BD00095304B /* Domotic-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domotic-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E529C2260A5BD00095304B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E529C4260A5BD00095304B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91E529C6260A5BD00095304B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		91E529C9260A5BD00095304B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E529CB260A5BD00095304B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E529CE260A5BD00095304B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E529D0260A5BD00095304B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E529D8260A5CDC0095304B /* MenuTabBarContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarContract.swift; sourceTree = "<group>"; };
+		91E529D9260A5CDC0095304B /* MenuTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarPresenter.swift; sourceTree = "<group>"; };
+		91E529DA260A5CDC0095304B /* MenuTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarBuilder.swift; sourceTree = "<group>"; };
+		91E529DB260A5CDC0095304B /* MenuTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarInteractor.swift; sourceTree = "<group>"; };
+		91E529DC260A5CDC0095304B /* MenuTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarView.swift; sourceTree = "<group>"; };
+		91E529DD260A5CDC0095304B /* MenuTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTabBarView.xib; sourceTree = "<group>"; };
+		91E529DE260A5CDC0095304B /* MenuTabBarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarEntity.swift; sourceTree = "<group>"; };
+		91E529DF260A5CDC0095304B /* MenuTabBarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarWireframe.swift; sourceTree = "<group>"; };
+		91E529EB260A5D240095304B /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		91E529EC260A5D240095304B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		91E529ED260A5D240095304B /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		91E529EE260A5D240095304B /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		91E529EF260A5D240095304B /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		91E52A04260A617D0095304B /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		91E52A05260A617D0095304B /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		91E52A0B260A64440095304B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		91E52A0F260A648A0095304B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		91E52A10260A648A0095304B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		91E52A12260A648A0095304B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		91E52A13260A648A0095304B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.release.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release.xcconfig"; sourceTree = "<group>"; };
+		D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domotic_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787BF3FDC478AE063E1D5201 /* Pods_Domotic_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095091F05ED7974B4EBF8124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42F53B619B24BE257C328139 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */,
+				B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		91E529B6260A5BD00095304B = {
 			isa = PBXGroup;
 			children = (
 				91E529C1260A5BD00095304B /* Domotic-App */,
 				91E529C0260A5BD00095304B /* Products */,
+				42F53B619B24BE257C328139 /* Pods */,
+				095091F05ED7974B4EBF8124 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,105 @@
 		91E529C1260A5BD00095304B /* Domotic-App */ = {
 			isa = PBXGroup;
 			children = (
+				91E52A01260A617D0095304B /* Components */,
+				91E52A0E260A648A0095304B /* Extensions */,
+				91E529D0260A5BD00095304B /* Info.plist */,
+				91E529E9260A5CE20095304B /* Modules */,
+				91E52A0A260A640A0095304B /* Resources */,
 				91E529C2260A5BD00095304B /* AppDelegate.swift */,
 				91E529C4260A5BD00095304B /* SceneDelegate.swift */,
-				91E529C6260A5BD00095304B /* ViewController.swift */,
-				91E529C8260A5BD00095304B /* Main.storyboard */,
 				91E529CB260A5BD00095304B /* Assets.xcassets */,
 				91E529CD260A5BD00095304B /* LaunchScreen.storyboard */,
-				91E529D0260A5BD00095304B /* Info.plist */,
 			);
 			path = "Domotic-App";
+			sourceTree = "<group>";
+		};
+		91E529D7260A5C970095304B /* MenuTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A21260A663B0095304B /* UI */,
+				91E529DA260A5CDC0095304B /* MenuTabBarBuilder.swift */,
+				91E529D8260A5CDC0095304B /* MenuTabBarContract.swift */,
+				91E529DE260A5CDC0095304B /* MenuTabBarEntity.swift */,
+				91E529DB260A5CDC0095304B /* MenuTabBarInteractor.swift */,
+				91E529D9260A5CDC0095304B /* MenuTabBarPresenter.swift */,
+				91E529DC260A5CDC0095304B /* MenuTabBarView.swift */,
+				91E529DF260A5CDC0095304B /* MenuTabBarWireframe.swift */,
+			);
+			path = MenuTabBar;
+			sourceTree = "<group>";
+		};
+		91E529E9260A5CE20095304B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				91E529EA260A5D240095304B /* BASE */,
+				91E529D7260A5C970095304B /* MenuTabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		91E529EA260A5D240095304B /* BASE */ = {
+			isa = PBXGroup;
+			children = (
+				91E529ED260A5D240095304B /* BaseEntity.swift */,
+				91E529EE260A5D240095304B /* BaseInteractor.swift */,
+				91E529EF260A5D240095304B /* BasePresenter.swift */,
+				91E529EC260A5D240095304B /* BaseViewController.swift */,
+				91E529EB260A5D240095304B /* BaseWireframe.swift */,
+			);
+			path = BASE;
+			sourceTree = "<group>";
+		};
+		91E52A01260A617D0095304B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A02260A617D0095304B /* LoadingView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		91E52A02260A617D0095304B /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A03260A617D0095304B /* UI */,
+				91E52A05260A617D0095304B /* LoadingViewController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		91E52A03260A617D0095304B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A04260A617D0095304B /* LoadingView.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		91E52A0A260A640A0095304B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A0B260A64440095304B /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		91E52A0E260A648A0095304B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A0F260A648A0095304B /* UIImageViewExtension.swift */,
+				91E52A10260A648A0095304B /* UIColorExtension.swift */,
+				91E52A12260A648A0095304B /* UIViewControllerExtension.swift */,
+				91E52A13260A648A0095304B /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91E52A21260A663B0095304B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				91E529DD260A5CDC0095304B /* MenuTabBarView.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E529D3260A5BD00095304B /* Build configuration list for PBXNativeTarget "Domotic-App" */;
 			buildPhases = (
+				F6EBABB7A61885C68737B940 /* [CP] Check Pods Manifest.lock */,
 				91E529BB260A5BD00095304B /* Sources */,
 				91E529BC260A5BD00095304B /* Frameworks */,
 				91E529BD260A5BD00095304B /* Resources */,
+				0062DB0ACC57CD8EC558EACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +276,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E52A0C260A64440095304B /* Localizable.strings in Resources */,
 				91E529CF260A5BD00095304B /* LaunchScreen.storyboard in Resources */,
+				91E52A06260A617D0095304B /* LoadingView.xib in Resources */,
 				91E529CC260A5BD00095304B /* Assets.xcassets in Resources */,
-				91E529CA260A5BD00095304B /* Main.storyboard in Resources */,
+				91E529E5260A5CDC0095304B /* MenuTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0062DB0ACC57CD8EC558EACA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Domotic-App/Pods-Domotic-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Domotic-App/Pods-Domotic-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Domotic-App/Pods-Domotic-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6EBABB7A61885C68737B940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domotic-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91E529BB260A5BD00095304B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E529C7260A5BD00095304B /* ViewController.swift in Sources */,
+				91E52A15260A648A0095304B /* UIColorExtension.swift in Sources */,
+				91E529F4260A5D240095304B /* BasePresenter.swift in Sources */,
 				91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */,
+				91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */,
+				91E529E0260A5CDC0095304B /* MenuTabBarContract.swift in Sources */,
+				91E529E4260A5CDC0095304B /* MenuTabBarView.swift in Sources */,
+				91E529E3260A5CDC0095304B /* MenuTabBarInteractor.swift in Sources */,
+				91E529F1260A5D240095304B /* BaseViewController.swift in Sources */,
+				91E529E6260A5CDC0095304B /* MenuTabBarEntity.swift in Sources */,
+				91E529E1260A5CDC0095304B /* MenuTabBarPresenter.swift in Sources */,
+				91E529E7260A5CDC0095304B /* MenuTabBarWireframe.swift in Sources */,
+				91E52A18260A648A0095304B /* StringExtension.swift in Sources */,
+				91E529E2260A5CDC0095304B /* MenuTabBarBuilder.swift in Sources */,
 				91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */,
+				91E529F2260A5D240095304B /* BaseEntity.swift in Sources */,
+				91E529F0260A5D240095304B /* BaseWireframe.swift in Sources */,
+				91E52A17260A648A0095304B /* UIViewControllerExtension.swift in Sources */,
+				91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */,
+				91E529F3260A5D240095304B /* BaseInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		91E529C8260A5BD00095304B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91E529C9260A5BD00095304B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		91E529CD260A5BD00095304B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +487,7 @@
 		};
 		91E529D4260A5BD00095304B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +507,7 @@
 		};
 		91E529D5260A5BD00095304B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

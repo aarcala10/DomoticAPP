@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.4.1)
+  - LanguageManager-iOS (1.2.3)
+  - ObjectMapper (4.2.0)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - Alamofire
+  - LanguageManager-iOS
+  - ObjectMapper
+  - PromiseKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - LanguageManager-iOS
+    - ObjectMapper
+    - PromiseKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  LanguageManager-iOS: 020a6849c97949683926773fd5b82baceaa142db
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+
+PODFILE CHECKSUM: 260346ed93eab108d8bf5f595d8af3fd6784ec97
+
+COCOAPODS: 1.9.3
