@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 class RoomListPresenter: BasePresenter, RoomListPresenterContract {
 
@@ -15,14 +16,29 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
     var interactor: RoomListInteractorContract!
     var entity: RoomListEntityContract!
     var wireframe: RoomListWireframeContract!
+    
+    var roomsList : [Room] = []
 
     func viewDidLoad() {
 
     }
 
     func viewWillAppear() {
-
+        firstly {
+            interactor.getRoomsList()
+        }.done { [weak self] roomsListData in
+            self?.roomsList = roomsListData
+            self?.view.updateData(rooms: roomsListData)
+        }.catch{ error in
+            self.view.feedbackError(error: error)
+        }
     }
+    
+    func getTabBarTitle() -> String {
+        return "Rooms"
+    }
+    
+    
 }
 
 

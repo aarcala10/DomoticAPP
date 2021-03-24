@@ -13,7 +13,7 @@ class RoomListBuilder {
 
     static func build() -> RoomListView {
         let view = RoomListView.init(nibName: String(describing: RoomListView.self), bundle: nil)
-        view.tabBarItem = UITabBarItem(title: "RoomList", image: UIImage(systemName: "square.grid.2x2.fill"), tag: 0)
+        view.tabBarItem = UITabBarItem(title: "Rooms", image: UIImage(systemName: "square.grid.2x2.fill"), tag: 0)
         
         let presenter = RoomListPresenter()
         let entity = RoomListEntity()

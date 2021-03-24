@@ -8,13 +8,27 @@
 //
 
 import Foundation
+import PromiseKit
 
 class RoomListInteractor: BaseInteractor, RoomListInteractorContract {
     weak var output: RoomListInteractorOutputContract!
 
-    var networkProvider: RoomNetworkProvider
+    var roomProvider: RoomProviderContract
     
-    init (provider: RoomNetworkProvider) {
-        self.networkProvider = provider
+    init (provider: RoomProviderContract) {
+        self.roomProvider = provider
+    }
+    
+func getRoomsList() -> Promise<[Room]> {
+        return Promise<[Room]> { promise in
+            firstly {
+                self.roomProvider.getRooms()
+            }.done { room in
+                let roomList = room.map {$0}
+                
+                promise.fulfill(roomList)
+            }.cauterize()
+            
+        }
     }
 }

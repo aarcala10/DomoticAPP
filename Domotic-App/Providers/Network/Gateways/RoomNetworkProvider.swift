@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import Alamofire
 import PromiseKit
 
-protocol RoomNetworkContract{
+protocol RoomProviderContract{
     func getRooms() -> Promise<[Room]>
 }
 
-class RoomNetworkProvider: BaseNetworkProvider {
+class RoomNetworkProvider: RoomProviderContract {
     
     enum RoomNetworkError: Error {
         case homePageLoadError, detailPageLoadError
@@ -23,50 +24,54 @@ class RoomNetworkProvider: BaseNetworkProvider {
         case kDetailRoom(String)
     }
     
-    //MARK: Apunte
-    /* En este caso coincide el nombre del String en el JSON recibido con el String que completa la URL por eso uso kAPIResultsKey en el get url */
+    //MARK: NOTE
+    /* En este caso coincide el nombre del String en el JSON recibido con el String que completa la URL por eso uso kAPIResultsKey en el getUrl */
     let kAPIResultsKey = "rooms"
-    let kAPIIdKey = "id"
     
+    func getRooms() -> Promise<[Room]> {
+        return self.getHomePage()
+    }
     
     private func getUrl(service: RoomURLEntries) -> URL {
-        switch service {
-        case .kHomePage:
-            return URL(string: kAPIURL+kAPIResultsKey)!
-        case .kDetailRoom(let roomId):
-            return URL(string: kAPIURL+String(roomId))!
-        }
+        print(kAPIURL+kAPIResultsKey)
+        return URL(string: kAPIURL+kAPIResultsKey)!
     }
     
     private func getHomePage() -> Promise<[Room]> {
         return Promise<[Room]> { promise in
-            sessionManager.request(getUrl(service: .kHomePage)).responseJSON { response in
+            AF.request(getUrl(service: .kHomePage)).responseJSON { response in
                 guard let data = try? response.result.get() as? [String: Any],
-                      let dataResults = data[self.kAPIResultsKey] as? [Room] else {
+                      let dataResults = (data[self.kAPIResultsKey] as? [[String: Any]]) else {
                     promise.reject(RoomNetworkError.homePageLoadError)
                     return
                 }
-
-                promise.fulfill(dataResults)
+                var results: [Room] = []
+                for item in dataResults{
+                    if let room = try? Room(JSON: item){
+                        results.append(room)
+                    }
+                }
+                
+                promise.fulfill(results)
             }
         }
     }
     
-    private func getDetailPage(name: String) -> Promise<DetailRoom> {
-        return Promise<DetailRoom> { promise in
-            sessionManager.request(getUrl(service: .kDetailRoom(name))).responseJSON { response in
-                guard let data = try? response.result.get() as? [String: Any] else {
-                    promise.reject(RoomNetworkError.detailPageLoadError)
-                    return
-                }
-                
-                if let detailRoom = try? DetailRoom(JSON: data) {
-                    promise.fulfill(detailRoom)
-                } else{
-                    promise.reject(RoomNetworkError.detailPageLoadError)
-                }
-            }
-        }
-    }
+//    private func getDetailPage(name: String) -> Promise<DetailRoom> {
+//        return Promise<DetailRoom> { promise in
+//            sessionManager.request(getUrl(service: .kDetailRoom(name))).responseJSON { response in
+//                guard let data = try? response.result.get() as? [String: Any] else {
+//                    promise.reject(RoomNetworkError.detailPageLoadError)
+//                    return
+//                }
+//
+//                if let detailRoom = try? DetailRoom(JSON: data) {
+//                    promise.fulfill(detailRoom)
+//                } else{
+//                    promise.reject(RoomNetworkError.detailPageLoadError)
+//                }
+//            }
+//        }
+//    }
 
 }

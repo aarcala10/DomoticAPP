@@ -40,11 +40,12 @@
 		91E52A31260A6CB40095304B /* RoomListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A29260A6CB40095304B /* RoomListView.xib */; };
 		91E52A32260A6CB40095304B /* RoomListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A2A260A6CB40095304B /* RoomListEntity.swift */; };
 		91E52A33260A6CB40095304B /* RoomListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A2B260A6CB40095304B /* RoomListWireframe.swift */; };
-		91E52A38260A7A030095304B /* BaseNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A37260A7A030095304B /* BaseNetworkProvider.swift */; };
 		91E52A3C260A7A500095304B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A3B260A7A500095304B /* NetworkConstants.swift */; };
 		91E52A4A260A81EB0095304B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A49260A81EB0095304B /* Room.swift */; };
 		91E52A4D260A841D0095304B /* RoomNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A4C260A841D0095304B /* RoomNetworkProvider.swift */; };
 		91E52A50260ABA400095304B /* DetailRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A4F260ABA400095304B /* DetailRoom.swift */; };
+		91E52A7D260BB0EA0095304B /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A7B260BB0EA0095304B /* RoomCell.swift */; };
+		91E52A7E260BB0EA0095304B /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A7C260BB0EA0095304B /* RoomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,11 +84,12 @@
 		91E52A29260A6CB40095304B /* RoomListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomListView.xib; sourceTree = "<group>"; };
 		91E52A2A260A6CB40095304B /* RoomListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListEntity.swift; sourceTree = "<group>"; };
 		91E52A2B260A6CB40095304B /* RoomListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListWireframe.swift; sourceTree = "<group>"; };
-		91E52A37260A7A030095304B /* BaseNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkProvider.swift; sourceTree = "<group>"; };
 		91E52A3B260A7A500095304B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		91E52A49260A81EB0095304B /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		91E52A4C260A841D0095304B /* RoomNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNetworkProvider.swift; sourceTree = "<group>"; };
 		91E52A4F260ABA400095304B /* DetailRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoom.swift; sourceTree = "<group>"; };
+		91E52A7B260BB0EA0095304B /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		91E52A7C260BB0EA0095304B /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
 		B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.release.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release.xcconfig"; sourceTree = "<group>"; };
 		D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domotic_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,8 +164,8 @@
 			children = (
 				91E52A21260A663B0095304B /* UI */,
 				91E529DA260A5CDC0095304B /* MenuTabBarBuilder.swift */,
-				91E529D8260A5CDC0095304B /* MenuTabBarContract.swift */,
 				91E529DE260A5CDC0095304B /* MenuTabBarEntity.swift */,
+				91E529D8260A5CDC0095304B /* MenuTabBarContract.swift */,
 				91E529DB260A5CDC0095304B /* MenuTabBarInteractor.swift */,
 				91E529D9260A5CDC0095304B /* MenuTabBarPresenter.swift */,
 				91E529DC260A5CDC0095304B /* MenuTabBarView.swift */,
@@ -255,8 +257,8 @@
 				91E52A27260A6CB40095304B /* RoomListInteractor.swift */,
 				91E52A25260A6CB40095304B /* RoomListPresenter.swift */,
 				91E52A28260A6CB40095304B /* RoomListView.swift */,
-				91E52A29260A6CB40095304B /* RoomListView.xib */,
 				91E52A2B260A6CB40095304B /* RoomListWireframe.swift */,
+				91E52A52260BA3290095304B /* UI */,
 			);
 			path = RoomList;
 			sourceTree = "<group>";
@@ -272,7 +274,6 @@
 		91E52A3A260A7A280095304B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				91E52A37260A7A030095304B /* BaseNetworkProvider.swift */,
 				91E52A3B260A7A500095304B /* NetworkConstants.swift */,
 				91E52A3E260A7CE80095304B /* Gateways */,
 			);
@@ -294,6 +295,24 @@
 				91E52A4F260ABA400095304B /* DetailRoom.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		91E52A52260BA3290095304B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A7A260BB09C0095304B /* Cells */,
+				91E52A29260A6CB40095304B /* RoomListView.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		91E52A7A260BB09C0095304B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				91E52A7B260BB0EA0095304B /* RoomCell.swift */,
+				91E52A7C260BB0EA0095304B /* RoomCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E52A7E260BB0EA0095304B /* RoomCell.xib in Resources */,
 				91E52A0C260A64440095304B /* Localizable.strings in Resources */,
 				91E529CF260A5BD00095304B /* LaunchScreen.storyboard in Resources */,
 				91E52A06260A617D0095304B /* LoadingView.xib in Resources */,
@@ -418,7 +438,7 @@
 				91E529F4260A5D240095304B /* BasePresenter.swift in Sources */,
 				91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */,
 				91E52A33260A6CB40095304B /* RoomListWireframe.swift in Sources */,
-				91E52A38260A7A030095304B /* BaseNetworkProvider.swift in Sources */,
+				91E52A7D260BB0EA0095304B /* RoomCell.swift in Sources */,
 				91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */,
 				91E52A2E260A6CB40095304B /* RoomListBuilder.swift in Sources */,
 				91E52A32260A6CB40095304B /* RoomListEntity.swift in Sources */,

@@ -25,8 +25,8 @@ class MenuTabBarPresenter: BasePresenter, MenuTabBarPresenterContract {
     }
     
     func getTabBarViewController() -> [BaseViewController] {
-        
-        return []
+        let roomList = RoomListBuilder.build()
+        return [roomList]
     }
 }
 

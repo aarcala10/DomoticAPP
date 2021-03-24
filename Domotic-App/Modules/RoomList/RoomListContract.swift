@@ -18,6 +18,9 @@ protocol RoomListEntityContract: BaseEntity {
 protocol RoomListViewContract: BaseViewController {
     var presenter: RoomListPresenterContract! { get set }
     
+    func updateData(rooms: [Room])
+    func feedbackError(error: Error)
+    
 }
 
 protocol RoomListPresenterContract: BasePresenter {
@@ -32,6 +35,7 @@ protocol RoomListPresenterContract: BasePresenter {
 
 protocol RoomListInteractorContract: BaseInteractor {
     var output: RoomListInteractorOutputContract! {get set}
+    func getRoomsList() -> Promise<[Room]>
 }
 
 protocol RoomListInteractorOutputContract: class {
