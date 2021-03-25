@@ -11,6 +11,7 @@ import PromiseKit
 
 protocol RoomProviderContract{
     func getRooms() -> Promise<[Room]>
+    func getDetailRoom(nameRoom: String) -> Promise<DetailRoom>
 }
 
 class RoomNetworkProvider: RoomProviderContract {
@@ -32,8 +33,12 @@ class RoomNetworkProvider: RoomProviderContract {
         return self.getHomePage()
     }
     
+    func getDetailRoom(nameRoom: String) -> Promise<DetailRoom> {
+        return self.getDetailPage(name: nameRoom)
+    }
+    
     private func getUrl(service: RoomURLEntries) -> URL {
-        print(kAPIURL+kAPIResultsKey)
+        
         return URL(string: kAPIURL+kAPIResultsKey)!
     }
     
@@ -49,29 +54,31 @@ class RoomNetworkProvider: RoomProviderContract {
                 for item in dataResults{
                     if let room = try? Room(JSON: item){
                         results.append(room)
+                    } else{
+                        promise.reject(RoomNetworkError.homePageLoadError)
                     }
                 }
-                
                 promise.fulfill(results)
             }
         }
     }
     
-//    private func getDetailPage(name: String) -> Promise<DetailRoom> {
-//        return Promise<DetailRoom> { promise in
-//            sessionManager.request(getUrl(service: .kDetailRoom(name))).responseJSON { response in
-//                guard let data = try? response.result.get() as? [String: Any] else {
-//                    promise.reject(RoomNetworkError.detailPageLoadError)
-//                    return
-//                }
-//
-//                if let detailRoom = try? DetailRoom(JSON: data) {
-//                    promise.fulfill(detailRoom)
-//                } else{
-//                    promise.reject(RoomNetworkError.detailPageLoadError)
-//                }
-//            }
-//        }
-//    }
+    private func getDetailPage(name: String) -> Promise<DetailRoom> {
+        return Promise<DetailRoom> { promise in
+            let nameLowercassed = name.lowercased()
+            AF.request(getUrl(service: .kDetailRoom(nameLowercassed))).responseJSON { response in
+                guard let data = try? response.result.get() as? [String: Any] else {
+                    promise.reject(RoomNetworkError.detailPageLoadError)
+                    return
+                }
+
+                if let detailRoom = try? DetailRoom(JSON: data) {
+                    promise.fulfill(detailRoom)
+                } else{
+                    promise.reject(RoomNetworkError.detailPageLoadError)
+                }
+            }
+        }
+    }
 
 }

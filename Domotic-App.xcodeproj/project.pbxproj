@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		787BF3FDC478AE063E1D5201 /* Pods_Domotic_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */; };
+		910EAC8F260D159A00F0692C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */; };
 		91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C2260A5BD00095304B /* AppDelegate.swift */; };
 		91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C4260A5BD00095304B /* SceneDelegate.swift */; };
 		91E529CC260A5BD00095304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CB260A5BD00095304B /* Assets.xcassets */; };
@@ -30,7 +31,6 @@
 		91E52A0C260A64440095304B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A0B260A64440095304B /* Localizable.strings */; };
 		91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A0F260A648A0095304B /* UIImageViewExtension.swift */; };
 		91E52A15260A648A0095304B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A10260A648A0095304B /* UIColorExtension.swift */; };
-		91E52A17260A648A0095304B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A12260A648A0095304B /* UIViewControllerExtension.swift */; };
 		91E52A18260A648A0095304B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A13260A648A0095304B /* StringExtension.swift */; };
 		91E52A2C260A6CB40095304B /* RoomListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A24260A6CB40095304B /* RoomListContract.swift */; };
 		91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A25260A6CB40095304B /* RoomListPresenter.swift */; };
@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.debug.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug.xcconfig"; sourceTree = "<group>"; };
+		910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		91E529BF260A5BD00095304B /* Domotic-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domotic-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E529C2260A5BD00095304B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E529C4260A5BD00095304B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		91E52A0B260A64440095304B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91E52A0F260A648A0095304B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		91E52A10260A648A0095304B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		91E52A12260A648A0095304B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		91E52A13260A648A0095304B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		91E52A24260A6CB40095304B /* RoomListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListContract.swift; sourceTree = "<group>"; };
 		91E52A25260A6CB40095304B /* RoomListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListPresenter.swift; sourceTree = "<group>"; };
@@ -232,9 +232,9 @@
 		91E52A0E260A648A0095304B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */,
 				91E52A0F260A648A0095304B /* UIImageViewExtension.swift */,
 				91E52A10260A648A0095304B /* UIColorExtension.swift */,
-				91E52A12260A648A0095304B /* UIViewControllerExtension.swift */,
 				91E52A13260A648A0095304B /* StringExtension.swift */,
 			);
 			path = Extensions;
@@ -446,6 +446,7 @@
 				91E52A4A260A81EB0095304B /* Room.swift in Sources */,
 				91E529E0260A5CDC0095304B /* MenuTabBarContract.swift in Sources */,
 				91E529E4260A5CDC0095304B /* MenuTabBarView.swift in Sources */,
+				910EAC8F260D159A00F0692C /* UIViewControllerExtension.swift in Sources */,
 				91E529E3260A5CDC0095304B /* MenuTabBarInteractor.swift in Sources */,
 				91E52A30260A6CB40095304B /* RoomListView.swift in Sources */,
 				91E529F1260A5D240095304B /* BaseViewController.swift in Sources */,
@@ -461,7 +462,6 @@
 				91E52A4D260A841D0095304B /* RoomNetworkProvider.swift in Sources */,
 				91E529F2260A5D240095304B /* BaseEntity.swift in Sources */,
 				91E529F0260A5D240095304B /* BaseWireframe.swift in Sources */,
-				91E52A17260A648A0095304B /* UIViewControllerExtension.swift in Sources */,
 				91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */,
 				91E529F3260A5D240095304B /* BaseInteractor.swift in Sources */,
 			);

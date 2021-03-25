@@ -58,7 +58,7 @@ class RoomListDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: RoomCell.cellId, for: indexPath) as! RoomCell
         
-        cell.textLabel?.text = rooms[indexPath.row].name
+        cell.setUpData(room: rooms[indexPath.item])
         
         return cell
     }
@@ -67,10 +67,11 @@ class RoomListDataSource: NSObject, UITableViewDataSource {
 class RoomListDelegate: NSObject, UITableViewDelegate {
     weak var presenter: RoomListPresenterContract!
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70.0
+        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("select")
+
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

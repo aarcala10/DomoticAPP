@@ -27,8 +27,10 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
         firstly {
             interactor.getRoomsList()
         }.done { [weak self] roomsListData in
+            
             self?.roomsList = roomsListData
             self?.view.updateData(rooms: roomsListData)
+            
         }.catch{ error in
             self.view.feedbackError(error: error)
         }
@@ -37,8 +39,6 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
     func getTabBarTitle() -> String {
         return "Rooms"
     }
-    
-    
 }
 
 
