@@ -24,7 +24,7 @@ enum AlertType {
     var title: String {
         switch self {
         case .genericError:
-            return "_generic_error_title".localizedString()
+            return "ok"
         }
     }
 }
@@ -161,7 +161,7 @@ class BaseWireframe {
                 basicAlert.addAction($0)
             })
         } else {
-            basicAlert.addAction(UIAlertAction.init(title: "_generic_accept_title".localizedString(),
+            basicAlert.addAction(UIAlertAction.init(title: "ok",
                                                     style: .default, handler: nil)
             )
         }
@@ -189,7 +189,7 @@ class BaseWireframe {
                 basicErrorAlert.addAction($0)
             })
         } else {
-            basicErrorAlert.addAction(UIAlertAction.init(title: "_generic_accept_title".localizedString(),
+            basicErrorAlert.addAction(UIAlertAction.init(title: "ok",
                                                          style: .default,
                                                          handler: nil))
         }

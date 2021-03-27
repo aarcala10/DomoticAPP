@@ -9,5 +9,4 @@ target 'Domotic-App' do
   pod 'Alamofire'
   pod 'PromiseKit'
   pod 'ObjectMapper'
-  pod 'LanguageManager-iOS'
 end

@@ -39,7 +39,6 @@
 		91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A05260A617D0095304B /* LoadingViewController.swift */; };
 		91E52A0C260A64440095304B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A0B260A64440095304B /* Localizable.strings */; };
 		91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A0F260A648A0095304B /* UIImageViewExtension.swift */; };
-		91E52A18260A648A0095304B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A13260A648A0095304B /* StringExtension.swift */; };
 		91E52A2C260A6CB40095304B /* RoomListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A24260A6CB40095304B /* RoomListContract.swift */; };
 		91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A25260A6CB40095304B /* RoomListPresenter.swift */; };
 		91E52A2E260A6CB40095304B /* RoomListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A26260A6CB40095304B /* RoomListBuilder.swift */; };
@@ -91,7 +90,6 @@
 		91E52A05260A617D0095304B /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		91E52A0B260A64440095304B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91E52A0F260A648A0095304B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		91E52A13260A648A0095304B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		91E52A24260A6CB40095304B /* RoomListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListContract.swift; sourceTree = "<group>"; };
 		91E52A25260A6CB40095304B /* RoomListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListPresenter.swift; sourceTree = "<group>"; };
 		91E52A26260A6CB40095304B /* RoomListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListBuilder.swift; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 			children = (
 				910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */,
 				91E52A0F260A648A0095304B /* UIImageViewExtension.swift */,
-				91E52A13260A648A0095304B /* StringExtension.swift */,
 				910EACBF260E4DBA00F0692C /* UIViewExtension.swift */,
 			);
 			path = Extensions;
@@ -498,7 +495,6 @@
 				91E52A50260ABA400095304B /* DetailRoom.swift in Sources */,
 				91E529E1260A5CDC0095304B /* MenuTabBarPresenter.swift in Sources */,
 				91E529E7260A5CDC0095304B /* MenuTabBarWireframe.swift in Sources */,
-				91E52A18260A648A0095304B /* StringExtension.swift in Sources */,
 				91E52A2C260A6CB40095304B /* RoomListContract.swift in Sources */,
 				91E52A2F260A6CB40095304B /* RoomListInteractor.swift in Sources */,
 				91E529E2260A5CDC0095304B /* MenuTabBarBuilder.swift in Sources */,
