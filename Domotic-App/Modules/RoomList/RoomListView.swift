@@ -13,13 +13,12 @@ class RoomListView: BaseViewController, RoomListViewContract {
     var presenter: RoomListPresenterContract!
 
     @IBOutlet weak var roomsTable: UITableView!
-    var datasource: RoomListDataSource!
-    var delegate: RoomListDelegate!
+    var rooms: [Room] = []
 
 	// MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupView()
+        self.setupTable()
         self.presenter.viewDidLoad()
     }
 
@@ -29,7 +28,7 @@ class RoomListView: BaseViewController, RoomListViewContract {
     }
     
     func updateData(rooms: [Room]) {
-        datasource.rooms = rooms
+        self.rooms = rooms
         roomsTable.reloadData()
     }
     
@@ -37,20 +36,16 @@ class RoomListView: BaseViewController, RoomListViewContract {
         assert(false, "not implemented")
     }
 
-    private func setupView() {
+    private func setupTable() {
         roomsTable.register(UINib(nibName: RoomCell.cellId, bundle: nil), forCellReuseIdentifier: RoomCell.cellId)
-        
-        datasource = RoomListDataSource()
-        delegate = RoomListDelegate()
-        delegate.presenter = presenter
 
-        roomsTable.dataSource = datasource
-        roomsTable.delegate = delegate
+        roomsTable.dataSource = self
+        roomsTable.delegate = self
     }
 }
 
-class RoomListDataSource: NSObject, UITableViewDataSource {
-    var rooms: [Room] = []
+extension RoomListView: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rooms.count
     }
@@ -64,13 +59,14 @@ class RoomListDataSource: NSObject, UITableViewDataSource {
     }
 }
 
-class RoomListDelegate: NSObject, UITableViewDelegate {
-    weak var presenter: RoomListPresenterContract!
+extension RoomListView: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.selectRoomCell(name: rooms[indexPath.row].name)
 
         tableView.deselectRow(at: indexPath, animated: true)
     }

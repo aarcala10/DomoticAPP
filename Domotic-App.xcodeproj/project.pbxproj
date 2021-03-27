@@ -17,6 +17,7 @@
 		910EACB4260D222400F0692C /* RoomDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACAC260D222400F0692C /* RoomDetailInteractor.swift */; };
 		910EACB5260D222400F0692C /* RoomDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACAD260D222400F0692C /* RoomDetailWireframe.swift */; };
 		910EACB6260D222400F0692C /* RoomDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910EACAE260D222400F0692C /* RoomDetailView.xib */; };
+		910EACC0260E4DBA00F0692C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACBF260E4DBA00F0692C /* UIViewExtension.swift */; };
 		91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C2260A5BD00095304B /* AppDelegate.swift */; };
 		91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C4260A5BD00095304B /* SceneDelegate.swift */; };
 		91E529CC260A5BD00095304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CB260A5BD00095304B /* Assets.xcassets */; };
@@ -38,7 +39,6 @@
 		91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A05260A617D0095304B /* LoadingViewController.swift */; };
 		91E52A0C260A64440095304B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A0B260A64440095304B /* Localizable.strings */; };
 		91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A0F260A648A0095304B /* UIImageViewExtension.swift */; };
-		91E52A15260A648A0095304B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A10260A648A0095304B /* UIColorExtension.swift */; };
 		91E52A18260A648A0095304B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A13260A648A0095304B /* StringExtension.swift */; };
 		91E52A2C260A6CB40095304B /* RoomListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A24260A6CB40095304B /* RoomListContract.swift */; };
 		91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A25260A6CB40095304B /* RoomListPresenter.swift */; };
@@ -67,6 +67,7 @@
 		910EACAC260D222400F0692C /* RoomDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetailInteractor.swift; sourceTree = "<group>"; };
 		910EACAD260D222400F0692C /* RoomDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetailWireframe.swift; sourceTree = "<group>"; };
 		910EACAE260D222400F0692C /* RoomDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomDetailView.xib; sourceTree = "<group>"; };
+		910EACBF260E4DBA00F0692C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		91E529BF260A5BD00095304B /* Domotic-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domotic-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E529C2260A5BD00095304B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E529C4260A5BD00095304B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		91E52A05260A617D0095304B /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		91E52A0B260A64440095304B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91E52A0F260A648A0095304B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		91E52A10260A648A0095304B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		91E52A13260A648A0095304B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		91E52A24260A6CB40095304B /* RoomListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListContract.swift; sourceTree = "<group>"; };
 		91E52A25260A6CB40095304B /* RoomListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListPresenter.swift; sourceTree = "<group>"; };
@@ -216,10 +216,10 @@
 		91E529E9260A5CE20095304B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				910EACA6260D222400F0692C /* RoomDetail */,
-				91E52A23260A6C230095304B /* RoomList */,
 				91E529EA260A5D240095304B /* BASE */,
 				91E529D7260A5C970095304B /* MenuTabBar */,
+				910EACA6260D222400F0692C /* RoomDetail */,
+				91E52A23260A6C230095304B /* RoomList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -274,8 +274,8 @@
 			children = (
 				910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */,
 				91E52A0F260A648A0095304B /* UIImageViewExtension.swift */,
-				91E52A10260A648A0095304B /* UIColorExtension.swift */,
 				91E52A13260A648A0095304B /* StringExtension.swift */,
+				910EACBF260E4DBA00F0692C /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -475,7 +475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E52A3C260A7A500095304B /* NetworkConstants.swift in Sources */,
-				91E52A15260A648A0095304B /* UIColorExtension.swift in Sources */,
 				910EACB2260D222400F0692C /* RoomDetailContract.swift in Sources */,
 				91E529F4260A5D240095304B /* BasePresenter.swift in Sources */,
 				91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */,
@@ -507,6 +506,7 @@
 				91E52A4D260A841D0095304B /* RoomNetworkProvider.swift in Sources */,
 				910EACB3260D222400F0692C /* RoomDetailView.swift in Sources */,
 				91E529F2260A5D240095304B /* BaseEntity.swift in Sources */,
+				910EACC0260E4DBA00F0692C /* UIViewExtension.swift in Sources */,
 				910EACAF260D222400F0692C /* RoomDetailPresenter.swift in Sources */,
 				910EACB5260D222400F0692C /* RoomDetailWireframe.swift in Sources */,
 				91E529F0260A5D240095304B /* BaseWireframe.swift in Sources */,

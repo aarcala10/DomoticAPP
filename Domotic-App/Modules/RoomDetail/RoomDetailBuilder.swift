@@ -11,7 +11,7 @@ import UIKit
 
 class RoomDetailBuilder {
 
-    static func build() -> RoomDetailView {
+    static func build(room: String) -> RoomDetailView {
         let view = RoomDetailView.init(nibName: String(describing: RoomDetailView.self), bundle: nil)
         
         let presenter = RoomDetailPresenter()
@@ -19,7 +19,7 @@ class RoomDetailBuilder {
         let wireframe = RoomDetailWireframe()
         
         let provider = RoomNetworkProvider()
-        let interactor = RoomDetailInteractor(provider: provider)
+        let interactor = RoomDetailInteractor(provider: provider, roomSelected: room)
         
         view.presenter = presenter
         view.presenter.view = view

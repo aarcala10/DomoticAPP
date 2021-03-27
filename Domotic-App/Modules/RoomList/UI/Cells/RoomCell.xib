@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zP9-Oj-vBZ" userLabel="containerView">
-                        <rect key="frame" x="6" y="6" width="521" height="127"/>
+                        <rect key="frame" x="8" y="6" width="517" height="127"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbm-Ni-HhO">
                                 <rect key="frame" x="16" y="31.5" width="64" height="64"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymt-Gq-kBw">
-                                <rect key="frame" x="128" y="47.5" width="387" height="32"/>
+                                <rect key="frame" x="128" y="47.5" width="383" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Dhf-ge-nIi"/>
                                 </constraints>
@@ -48,12 +48,12 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zP9-Oj-vBZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="3So-rd-CNZ"/>
+                    <constraint firstItem="zP9-Oj-vBZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3So-rd-CNZ"/>
                     <constraint firstItem="zP9-Oj-vBZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="AUj-w6-bwc"/>
                     <constraint firstAttribute="bottom" secondItem="zP9-Oj-vBZ" secondAttribute="bottom" constant="6" id="RD8-03-Mnb"/>
                     <constraint firstItem="zP9-Oj-vBZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RWm-Xv-1AW"/>
                     <constraint firstItem="zP9-Oj-vBZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="nhv-6N-7KI"/>
-                    <constraint firstAttribute="trailing" secondItem="zP9-Oj-vBZ" secondAttribute="trailing" constant="6" id="p7D-Ux-Myo"/>
+                    <constraint firstAttribute="trailing" secondItem="zP9-Oj-vBZ" secondAttribute="trailing" constant="8" id="p7D-Ux-Myo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

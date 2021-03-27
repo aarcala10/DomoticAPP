@@ -37,4 +37,9 @@ class RoomListWireframe: BaseWireframe, RoomListWireframeContract {
         }
     }
     
+    func showDetailRoomView(room: String) {
+        let detailView = RoomDetailBuilder.build(room: room)
+        self.presentView(from: self.view, useCase: detailView, withTransition: .modalWithNavigation, completion: nil)
+    }
+    
 }

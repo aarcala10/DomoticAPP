@@ -39,6 +39,10 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
     func getTabBarTitle() -> String {
         return "Rooms"
     }
+    
+    func selectRoomCell(name: String) {
+        wireframe?.showDetailRoomView(room: name)
+    }
 }
 
 

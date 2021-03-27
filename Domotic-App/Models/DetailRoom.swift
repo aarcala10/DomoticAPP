@@ -13,7 +13,7 @@ struct DetailRoom: ImmutableMappable{
     var light: String?
     var blinds: String?
     var door: String?
-    var air: Air?
+    var air: Air
     
     init(map: Map) throws {
         light = try map.value("light")
@@ -21,12 +21,19 @@ struct DetailRoom: ImmutableMappable{
         door = try map.value("door")
         air = try map.value("air")
     }
+    
+    func mapping(map: Map) {
+        light   >>> map["light"]
+        blinds >>> map["blinds"]
+        door >>> map["door"]
+        air >>> map["air"]
+    }
 }
 
 struct Air: ImmutableMappable{
     
-    var power: String
-    var temp: Int
+    var power: String?
+    var temp: Int?
     
     init(map: Map) throws {
         power = try map.value("power")

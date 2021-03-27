@@ -31,6 +31,8 @@ protocol RoomListPresenterContract: BasePresenter {
 
     func viewDidLoad()
     func viewWillAppear()
+    
+    func selectRoomCell(name: String)
 }
 
 protocol RoomListInteractorContract: BaseInteractor {
@@ -48,6 +50,7 @@ protocol RoomListWireframeContract: BaseWireframe {
     
     func showBasicLoading(text: String)
     func hideBasicLoading(completion: @escaping (() -> Void))
+    func showDetailRoomView(room: String)
 }
 
 protocol RoomListWireframeOutputContract: class {
