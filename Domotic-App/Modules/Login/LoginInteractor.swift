@@ -8,13 +8,35 @@
 //
 
 import Foundation
+import PromiseKit
 
 class LoginInteractor: BaseInteractor, LoginInteractorContract {
+    
     weak var output: LoginInteractorOutputContract!
 
-    var networkProvider: MyProviderContract
+    var loginProvider: LoginProviderContract
     
-    init (provider: MyProviderContract) {
-        self.networkProvider = provider
+    init (provider: LoginProviderContract) {
+        self.loginProvider = provider
+    }
+    
+    func login(login: Login) -> Promise<Bool> {
+        return Promise<Bool> { promise in
+            firstly {
+                self.loginProvider.login(login: login)
+            }.done{ result in
+                promise.fulfill(result)
+            }.cauterize()
+        }
+    }
+    
+    func signup(signup: Signup) -> Promise<Bool> {
+        return Promise<Bool> { promise in
+            firstly {
+                self.signup(signup: signup)
+            }.done{ result in
+                promise.fulfill(result)
+            }.cauterize()
+        }
     }
 }

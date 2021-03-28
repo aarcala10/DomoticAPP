@@ -35,11 +35,7 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
             self.view.feedbackError(error: error)
         }
     }
-    
-    func getTabBarTitle() -> String {
-        return "Rooms"
-    }
-    
+
     func selectRoomCell(name: String) {
         wireframe?.showDetailRoomView(room: name)
     }

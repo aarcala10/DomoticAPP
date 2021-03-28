@@ -26,6 +26,9 @@
 		91BA3EFA260F511F00EC7B80 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BA3EF2260F511F00EC7B80 /* LoginView.xib */; };
 		91BA3EFB260F511F00EC7B80 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EF3260F511F00EC7B80 /* LoginEntity.swift */; };
 		91BA3EFC260F511F00EC7B80 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EF4260F511F00EC7B80 /* LoginWireframe.swift */; };
+		91BA3F0F260FA6BA00EC7B80 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F0E260FA6BA00EC7B80 /* UITextFieldExtension.swift */; };
+		91BA3F14260FB27000EC7B80 /* LoginNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F13260FB27000EC7B80 /* LoginNetworkProvider.swift */; };
+		91BA3F17260FB30000EC7B80 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F16260FB30000EC7B80 /* Login.swift */; };
 		91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C2260A5BD00095304B /* AppDelegate.swift */; };
 		91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C4260A5BD00095304B /* SceneDelegate.swift */; };
 		91E529CC260A5BD00095304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CB260A5BD00095304B /* Assets.xcassets */; };
@@ -45,7 +48,6 @@
 		91E529F4260A5D240095304B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529EF260A5D240095304B /* BasePresenter.swift */; };
 		91E52A06260A617D0095304B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A04260A617D0095304B /* LoadingView.xib */; };
 		91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A05260A617D0095304B /* LoadingViewController.swift */; };
-		91E52A0C260A64440095304B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E52A0B260A64440095304B /* Localizable.strings */; };
 		91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A0F260A648A0095304B /* UIImageViewExtension.swift */; };
 		91E52A2C260A6CB40095304B /* RoomListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A24260A6CB40095304B /* RoomListContract.swift */; };
 		91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E52A25260A6CB40095304B /* RoomListPresenter.swift */; };
@@ -83,6 +85,9 @@
 		91BA3EF2260F511F00EC7B80 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		91BA3EF3260F511F00EC7B80 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
 		91BA3EF4260F511F00EC7B80 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		91BA3F0E260FA6BA00EC7B80 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		91BA3F13260FB27000EC7B80 /* LoginNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkProvider.swift; sourceTree = "<group>"; };
+		91BA3F16260FB30000EC7B80 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		91E529BF260A5BD00095304B /* Domotic-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domotic-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E529C2260A5BD00095304B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E529C4260A5BD00095304B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +109,6 @@
 		91E529EF260A5D240095304B /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		91E52A04260A617D0095304B /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		91E52A05260A617D0095304B /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		91E52A0B260A64440095304B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91E52A0F260A648A0095304B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		91E52A24260A6CB40095304B /* RoomListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListContract.swift; sourceTree = "<group>"; };
 		91E52A25260A6CB40095304B /* RoomListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListPresenter.swift; sourceTree = "<group>"; };
@@ -179,16 +183,24 @@
 		91BA3EEC260F510700EC7B80 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				91BA3F0C260FA17400EC7B80 /* UI */,
 				91BA3EED260F511F00EC7B80 /* LoginContract.swift */,
 				91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */,
 				91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */,
 				91BA3EF0260F511F00EC7B80 /* LoginInteractor.swift */,
 				91BA3EF1260F511F00EC7B80 /* LoginView.swift */,
-				91BA3EF2260F511F00EC7B80 /* LoginView.xib */,
 				91BA3EF3260F511F00EC7B80 /* LoginEntity.swift */,
 				91BA3EF4260F511F00EC7B80 /* LoginWireframe.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		91BA3F0C260FA17400EC7B80 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				91BA3EF2260F511F00EC7B80 /* LoginView.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		91E529B6260A5BD00095304B = {
@@ -294,7 +306,6 @@
 		91E52A0A260A640A0095304B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91E52A0B260A64440095304B /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 				910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */,
 				91E52A0F260A648A0095304B /* UIImageViewExtension.swift */,
 				910EACBF260E4DBA00F0692C /* UIViewExtension.swift */,
+				91BA3F0E260FA6BA00EC7B80 /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				91E52A4C260A841D0095304B /* RoomNetworkProvider.swift */,
+				91BA3F13260FB27000EC7B80 /* LoginNetworkProvider.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -362,6 +375,7 @@
 			children = (
 				91E52A49260A81EB0095304B /* Room.swift */,
 				91E52A4F260ABA400095304B /* DetailRoom.swift */,
+				91BA3F16260FB30000EC7B80 /* Login.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,7 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E52A7E260BB0EA0095304B /* RoomCell.xib in Resources */,
-				91E52A0C260A64440095304B /* Localizable.strings in Resources */,
 				91BA3EFA260F511F00EC7B80 /* LoginView.xib in Resources */,
 				91E529CF260A5BD00095304B /* LaunchScreen.storyboard in Resources */,
 				91E52A06260A617D0095304B /* LoadingView.xib in Resources */,
@@ -514,6 +527,7 @@
 				91E52A2D260A6CB40095304B /* RoomListPresenter.swift in Sources */,
 				91E52A2E260A6CB40095304B /* RoomListBuilder.swift in Sources */,
 				91E52A32260A6CB40095304B /* RoomListEntity.swift in Sources */,
+				91BA3F0F260FA6BA00EC7B80 /* UITextFieldExtension.swift in Sources */,
 				91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */,
 				91E52A4A260A81EB0095304B /* Room.swift in Sources */,
 				91BA3EF8260F511F00EC7B80 /* LoginInteractor.swift in Sources */,
@@ -526,6 +540,7 @@
 				91E52A30260A6CB40095304B /* RoomListView.swift in Sources */,
 				910EACB1260D222400F0692C /* RoomDetailBuilder.swift in Sources */,
 				91E529F1260A5D240095304B /* BaseViewController.swift in Sources */,
+				91BA3F14260FB27000EC7B80 /* LoginNetworkProvider.swift in Sources */,
 				91BA3EFC260F511F00EC7B80 /* LoginWireframe.swift in Sources */,
 				91E529E6260A5CDC0095304B /* MenuTabBarEntity.swift in Sources */,
 				91BA3EF6260F511F00EC7B80 /* LoginPresenter.swift in Sources */,
@@ -544,6 +559,7 @@
 				910EACAF260D222400F0692C /* RoomDetailPresenter.swift in Sources */,
 				91BA3EF9260F511F00EC7B80 /* LoginView.swift in Sources */,
 				910EACB5260D222400F0692C /* RoomDetailWireframe.swift in Sources */,
+				91BA3F17260FB30000EC7B80 /* Login.swift in Sources */,
 				91E529F0260A5D240095304B /* BaseWireframe.swift in Sources */,
 				91BA3EF7260F511F00EC7B80 /* LoginBuilder.swift in Sources */,
 				91E52A14260A648A0095304B /* UIImageViewExtension.swift in Sources */,

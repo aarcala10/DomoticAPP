@@ -13,11 +13,13 @@ class LoginBuilder {
 
     static func build() -> LoginView {
         let view = LoginView.init(nibName: String(describing: LoginView.self), bundle: nil)
+        view.tabBarItem = UITabBarItem(title: "Login", image: UIImage(systemName: "person.fill"), tag: 0)
+        
         let presenter = LoginPresenter()
         let entity = LoginEntity()
         let wireframe = LoginWireframe()
         
-        let provider = MyProvider()
+        let provider = LoginNetworkProvider()
         let interactor = LoginInteractor(provider: provider)
         
         view.presenter = presenter

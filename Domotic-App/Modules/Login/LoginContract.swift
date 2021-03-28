@@ -32,6 +32,9 @@ protocol LoginPresenterContract: BasePresenter {
 
 protocol LoginInteractorContract: BaseInteractor {
     var output: LoginInteractorOutputContract! {get set}
+    
+    func login(login: Login) -> Promise<Bool>
+    func signup(signup: Signup) -> Promise<Bool>
 }
 
 protocol LoginInteractorOutputContract: class {
