@@ -51,8 +51,12 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         setupData()
     }
     
+    func showAlertPopUp(message: String) {
+        showAlert(message, "Atention", "OK")
+    }
+    
     func feedbackError(error: Error) {
-        assert(false, "not implemented")
+        showAlertPopUp(message: error.localizedDescription)
     }
     
     private func setupView() {

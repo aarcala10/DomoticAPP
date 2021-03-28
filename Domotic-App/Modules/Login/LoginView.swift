@@ -81,12 +81,31 @@ class LoginView: BaseViewController, LoginViewContract {
     
     private func logIn(){
         if validateTextFieldLogIn(){
-            print("LOGIN")}
+            let login = Login(
+                username: userLoginField.text!,
+                password: passwordLoginField.text!
+            )
+            
+            self.presenter.login(login: login)}
     }
     
     private func signUp(){
         if validateTextFieldSigUp(){
-            print("SIGN UP")}
+            let signup = Signup(
+                username: userSignupField.text!,
+                password: passwordSignupField.text!,
+                email: emailSignupField.text!
+            )
+            self.presenter.signup(signup: signup)
+        }
+        
+    }
+    func showAlertPopUp(message: String) {
+        showAlert(message, "","OK")
+    }
+    
+    func feedbackError(error: Error) {
+        showAlert(error.localizedDescription, "Atention", "OK")
     }
     
 }
@@ -155,8 +174,8 @@ extension LoginView: UITextFieldDelegate {
     
     func validateTextFieldLogIn() -> Bool {
         
-        if  userLoginField.isUserValid(user: userSignupField.text ?? "") {
-            if passwordLoginField.isPasswordValid(password: passwordSignupField.text ?? ""){
+        if  userLoginField.isUserValid(user: userLoginField.text ?? "") {
+            if passwordLoginField.isPasswordValid(password: passwordLoginField.text ?? ""){
                 return true
             } else {
                 passwordLoginField.showInvalidate()

@@ -18,6 +18,7 @@
 		910EACB5260D222400F0692C /* RoomDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACAD260D222400F0692C /* RoomDetailWireframe.swift */; };
 		910EACB6260D222400F0692C /* RoomDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910EACAE260D222400F0692C /* RoomDetailView.xib */; };
 		910EACC0260E4DBA00F0692C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACBF260E4DBA00F0692C /* UIViewExtension.swift */; };
+		919C471F26109C8600E39F58 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C471E26109C8600E39F58 /* Note.swift */; };
 		91BA3EF5260F511F00EC7B80 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EED260F511F00EC7B80 /* LoginContract.swift */; };
 		91BA3EF6260F511F00EC7B80 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */; };
 		91BA3EF7260F511F00EC7B80 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */; };
@@ -77,6 +78,8 @@
 		910EACAD260D222400F0692C /* RoomDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetailWireframe.swift; sourceTree = "<group>"; };
 		910EACAE260D222400F0692C /* RoomDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomDetailView.xib; sourceTree = "<group>"; };
 		910EACBF260E4DBA00F0692C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		919C471626109BAF00E39F58 /* Domotic-App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Domotic-App.entitlements"; sourceTree = "<group>"; };
+		919C471E26109C8600E39F58 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		91BA3EED260F511F00EC7B80 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
@@ -183,14 +186,14 @@
 		91BA3EEC260F510700EC7B80 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				91BA3F0C260FA17400EC7B80 /* UI */,
-				91BA3EED260F511F00EC7B80 /* LoginContract.swift */,
-				91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */,
 				91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */,
-				91BA3EF0260F511F00EC7B80 /* LoginInteractor.swift */,
-				91BA3EF1260F511F00EC7B80 /* LoginView.swift */,
+				91BA3EED260F511F00EC7B80 /* LoginContract.swift */,
 				91BA3EF3260F511F00EC7B80 /* LoginEntity.swift */,
+				91BA3EF0260F511F00EC7B80 /* LoginInteractor.swift */,
+				91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */,
+				91BA3EF1260F511F00EC7B80 /* LoginView.swift */,
 				91BA3EF4260F511F00EC7B80 /* LoginWireframe.swift */,
+				91BA3F0C260FA17400EC7B80 /* UI */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 		91E529C1260A5BD00095304B /* Domotic-App */ = {
 			isa = PBXGroup;
 			children = (
+				919C471626109BAF00E39F58 /* Domotic-App.entitlements */,
 				91E52A0E260A648A0095304B /* Extensions */,
 				91E52A01260A617D0095304B /* Components */,
 				91E52A47260A80050095304B /* Models */,
@@ -376,6 +380,7 @@
 				91E52A49260A81EB0095304B /* Room.swift */,
 				91E52A4F260ABA400095304B /* DetailRoom.swift */,
 				91BA3F16260FB30000EC7B80 /* Login.swift */,
+				919C471E26109C8600E39F58 /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -528,6 +533,7 @@
 				91E52A2E260A6CB40095304B /* RoomListBuilder.swift in Sources */,
 				91E52A32260A6CB40095304B /* RoomListEntity.swift in Sources */,
 				91BA3F0F260FA6BA00EC7B80 /* UITextFieldExtension.swift in Sources */,
+				919C471F26109C8600E39F58 /* Note.swift in Sources */,
 				91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */,
 				91E52A4A260A81EB0095304B /* Room.swift in Sources */,
 				91BA3EF8260F511F00EC7B80 /* LoginInteractor.swift in Sources */,
@@ -703,6 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Domotic-App/Domotic-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW5J8VSJ22;
 				INFOPLIST_FILE = "Domotic-App/Info.plist";
@@ -712,6 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala..Domotic-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -723,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Domotic-App/Domotic-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW5J8VSJ22;
 				INFOPLIST_FILE = "Domotic-App/Info.plist";
@@ -732,6 +741,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala..Domotic-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

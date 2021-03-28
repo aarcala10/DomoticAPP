@@ -18,6 +18,9 @@ protocol LoginEntityContract: BaseEntity {
 protocol LoginViewContract: BaseViewController {
     var presenter: LoginPresenterContract! { get set }
     
+    func feedbackError(error: Error)
+    func showAlertPopUp(message: String)
+    
 }
 
 protocol LoginPresenterContract: BasePresenter {
@@ -28,6 +31,9 @@ protocol LoginPresenterContract: BasePresenter {
 
     func viewDidLoad()
     func viewWillAppear()
+    
+    func login(login: Login)
+    func signup(signup: Signup)
 }
 
 protocol LoginInteractorContract: BaseInteractor {

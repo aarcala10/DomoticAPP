@@ -31,9 +31,12 @@ class RoomListView: BaseViewController, RoomListViewContract {
         self.rooms = rooms
         roomsTable.reloadData()
     }
+    func showAlertPopUp(message: String) {
+        showAlert(message, "Atention", "OK")
+    }
     
     func feedbackError(error: Error) {
-        assert(false, "not implemented")
+        showAlertPopUp(message: error.localizedDescription)
     }
 
     private func setupTable() {

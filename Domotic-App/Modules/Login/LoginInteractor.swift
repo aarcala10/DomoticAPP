@@ -33,7 +33,7 @@ class LoginInteractor: BaseInteractor, LoginInteractorContract {
     func signup(signup: Signup) -> Promise<Bool> {
         return Promise<Bool> { promise in
             firstly {
-                self.signup(signup: signup)
+                self.loginProvider.signup(signup: signup)
             }.done{ result in
                 promise.fulfill(result)
             }.cauterize()
