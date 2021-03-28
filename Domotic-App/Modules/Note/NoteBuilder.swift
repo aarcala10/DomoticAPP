@@ -19,7 +19,8 @@ class NoteBuilder {
         let wireframe = NoteWireframe()
         
         let provider = NoteNetworkProvider()
-        let interactor = NoteInteractor(provider: provider)
+        let laProvider = LocalAuthenticationProvider()
+        let interactor = NoteInteractor(provider: provider, laProvider: laProvider)
         
         view.presenter = presenter
         view.presenter.view = view

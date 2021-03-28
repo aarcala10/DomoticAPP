@@ -40,19 +40,19 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eBj-qs-0gn">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jR-ZB-IjY" userLabel="LoginView">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="297"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Chb-9N-rh0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="297"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Chb-9N-rh0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-4g-oH7" userLabel="UsernameView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-Wj-lff">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-sH-hTm" userLabel="userLoginLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="98" height="26.5"/>
@@ -79,17 +79,17 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="5I3-Km-wKg"/>
+                                                        <constraint firstAttribute="height" constant="85" id="5I3-Km-wKg"/>
                                                         <constraint firstAttribute="trailing" secondItem="oiA-Wj-lff" secondAttribute="trailing" constant="32" id="Fwh-lD-K9n"/>
                                                         <constraint firstItem="oiA-Wj-lff" firstAttribute="centerY" secondItem="S7L-4g-oH7" secondAttribute="centerY" id="X1a-KZ-v8R"/>
                                                         <constraint firstItem="oiA-Wj-lff" firstAttribute="leading" secondItem="S7L-4g-oH7" secondAttribute="leading" constant="32" id="lmS-bg-1Fs"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-Sq-QJH" userLabel="PasswordView">
-                                                    <rect key="frame" x="0.0" y="87" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="85" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-5F-LxJ">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWx-Jc-gq5" userLabel="passwordLoginLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="26.5"/>
@@ -119,11 +119,11 @@
                                                         <constraint firstAttribute="trailing" secondItem="g7j-5F-LxJ" secondAttribute="trailing" constant="32" id="ClB-dX-kRC"/>
                                                         <constraint firstItem="g7j-5F-LxJ" firstAttribute="centerY" secondItem="y8h-Sq-QJH" secondAttribute="centerY" id="MKi-Vl-wHa"/>
                                                         <constraint firstItem="g7j-5F-LxJ" firstAttribute="leading" secondItem="y8h-Sq-QJH" secondAttribute="leading" constant="32" id="P2I-TG-qYC"/>
-                                                        <constraint firstAttribute="height" constant="65" id="nu7-Ov-DKn"/>
+                                                        <constraint firstAttribute="height" constant="85" id="nu7-Ov-DKn"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAy-cN-zBN" userLabel="BotonLogInView">
-                                                    <rect key="frame" x="0.0" y="174" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="170" width="414" height="65"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xv6-Fm-UjI" userLabel="LogIn">
                                                             <rect key="frame" x="50" y="2" width="314" height="61"/>
@@ -145,7 +145,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABT-LD-jDO" userLabel="BotonSignUpView">
-                                                    <rect key="frame" x="0.0" y="261" width="414" height="36"/>
+                                                    <rect key="frame" x="0.0" y="235" width="414" height="36"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdH-NQ-byc">
                                                             <rect key="frame" x="86" y="1.5" width="242" height="33"/>
@@ -187,16 +187,16 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-zn-Ofn" userLabel="SignUpView">
-                                    <rect key="frame" x="0.0" y="307" width="414" height="471"/>
+                                    <rect key="frame" x="0.0" y="281" width="414" height="441"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-Tm-xzh">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="471"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-Tm-xzh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="441"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-IB-tbS" userLabel="UsernameView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-Fq-qmn">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8Z-0u-6Cj" userLabel="userLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="98" height="26.5"/>
@@ -225,17 +225,17 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="7RI-zc-cH8"/>
+                                                        <constraint firstAttribute="height" constant="85" id="7RI-zc-cH8"/>
                                                         <constraint firstAttribute="trailing" secondItem="8zI-Fq-qmn" secondAttribute="trailing" constant="32" id="h9I-z4-7Ab"/>
                                                         <constraint firstItem="8zI-Fq-qmn" firstAttribute="leading" secondItem="Edq-IB-tbS" secondAttribute="leading" constant="32" id="pL9-Bb-6VQ"/>
                                                         <constraint firstItem="8zI-Fq-qmn" firstAttribute="centerY" secondItem="Edq-IB-tbS" secondAttribute="centerY" id="yhf-xO-GJL"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUD-SM-zVi" userLabel="EmailView">
-                                                    <rect key="frame" x="0.0" y="87" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="85" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kqG-AV-Nh6">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdF-b1-UIx" userLabel="emailLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="51.5" height="26.5"/>
@@ -263,16 +263,16 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="kqG-AV-Nh6" secondAttribute="trailing" constant="32" id="I8o-zj-VkK"/>
-                                                        <constraint firstAttribute="height" constant="65" id="LmW-c7-hO5"/>
+                                                        <constraint firstAttribute="height" constant="85" id="LmW-c7-hO5"/>
                                                         <constraint firstItem="kqG-AV-Nh6" firstAttribute="leading" secondItem="oUD-SM-zVi" secondAttribute="leading" constant="32" id="nqR-6i-g8d"/>
                                                         <constraint firstItem="kqG-AV-Nh6" firstAttribute="centerY" secondItem="oUD-SM-zVi" secondAttribute="centerY" id="uxW-et-GAU"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MJ-MM-i9R" userLabel="PasswordView">
-                                                    <rect key="frame" x="0.0" y="174" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="170" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9CN-eT-L3t">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwn-uO-8k6" userLabel="passwordLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="26.5"/>
@@ -300,16 +300,16 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="9CN-eT-L3t" firstAttribute="leading" secondItem="0MJ-MM-i9R" secondAttribute="leading" constant="32" id="GBr-5K-d6q"/>
-                                                        <constraint firstAttribute="height" constant="65" id="LwD-g4-5yh"/>
+                                                        <constraint firstAttribute="height" constant="85" id="LwD-g4-5yh"/>
                                                         <constraint firstItem="9CN-eT-L3t" firstAttribute="centerY" secondItem="0MJ-MM-i9R" secondAttribute="centerY" id="U9O-9a-PsP"/>
                                                         <constraint firstAttribute="trailing" secondItem="9CN-eT-L3t" secondAttribute="trailing" constant="32" id="Y4C-UD-65a"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-g9-mkA" userLabel="ConfirmPasswordView">
-                                                    <rect key="frame" x="0.0" y="261" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="255" width="414" height="85"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-ei-0db">
-                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
+                                                            <rect key="frame" x="32" y="-16.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Confirm Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feB-no-6hT" userLabel="confirmPasswordLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="178.5" height="26.5"/>
@@ -337,13 +337,13 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="MaW-ei-0db" firstAttribute="leading" secondItem="S5K-g9-mkA" secondAttribute="leading" constant="32" id="OXg-Uq-all"/>
-                                                        <constraint firstAttribute="height" constant="65" id="VHo-dm-IkV"/>
+                                                        <constraint firstAttribute="height" constant="85" id="VHo-dm-IkV"/>
                                                         <constraint firstItem="MaW-ei-0db" firstAttribute="centerY" secondItem="S5K-g9-mkA" secondAttribute="centerY" id="YNV-Og-GDd"/>
                                                         <constraint firstAttribute="trailing" secondItem="MaW-ei-0db" secondAttribute="trailing" constant="32" id="kb4-ae-o3k"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEY-3n-uP8" userLabel="BotonSignUpView">
-                                                    <rect key="frame" x="0.0" y="348" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="340" width="414" height="65"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS4-4a-aZP" userLabel="SignUp">
                                                             <rect key="frame" x="50" y="2" width="314" height="61"/>
@@ -366,7 +366,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8D-SY-0qz" userLabel="BotonLogInView">
-                                                    <rect key="frame" x="0.0" y="435" width="414" height="36"/>
+                                                    <rect key="frame" x="0.0" y="405" width="414" height="36"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhz-I8-fxM">
                                                             <rect key="frame" x="114.5" y="1.5" width="185" height="33"/>
@@ -416,12 +416,17 @@
                         </stackView>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="eBj-qs-0gn" firstAttribute="leading" secondItem="JJh-0K-TMB" secondAttribute="leading" id="1HL-Zn-m9F"/>
                         <constraint firstItem="eBj-qs-0gn" firstAttribute="trailing" secondItem="JJh-0K-TMB" secondAttribute="trailing" id="1ss-01-guP"/>
                         <constraint firstItem="eBj-qs-0gn" firstAttribute="bottom" secondItem="JJh-0K-TMB" secondAttribute="bottom" id="9vG-V3-FQk"/>
                         <constraint firstAttribute="height" constant="852" id="D0q-h1-ROG"/>
+                        <constraint firstItem="JJh-0K-TMB" firstAttribute="trailing" secondItem="eBj-qs-0gn" secondAttribute="trailing" id="FVK-K1-7rx"/>
                         <constraint firstItem="eBj-qs-0gn" firstAttribute="width" secondItem="ofK-sO-lJb" secondAttribute="width" id="P1R-3O-8JJ"/>
                         <constraint firstItem="eBj-qs-0gn" firstAttribute="top" secondItem="JJh-0K-TMB" secondAttribute="top" id="Y1m-JJ-GeH"/>
                         <constraint firstItem="eBj-qs-0gn" firstAttribute="leading" secondItem="JJh-0K-TMB" secondAttribute="leading" id="c1H-35-lIW"/>
+                        <constraint firstItem="eBj-qs-0gn" firstAttribute="top" secondItem="JJh-0K-TMB" secondAttribute="top" id="mkM-vG-uAY"/>
+                        <constraint firstItem="JJh-0K-TMB" firstAttribute="bottom" secondItem="eBj-qs-0gn" secondAttribute="bottom" id="nrH-CW-wSs"/>
+                        <constraint firstItem="eBj-qs-0gn" firstAttribute="leading" secondItem="JJh-0K-TMB" secondAttribute="leading" id="sgS-df-IVv"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="JJh-0K-TMB"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="ofK-sO-lJb"/>
@@ -430,6 +435,7 @@
             <viewLayoutGuide key="safeArea" id="tAt-aP-EcC"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="4QN-Y6-nOm" firstAttribute="top" secondItem="tAt-aP-EcC" secondAttribute="top" id="LqY-EU-9iR"/>
                 <constraint firstItem="4QN-Y6-nOm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bBQ-js-mqM"/>
                 <constraint firstItem="4QN-Y6-nOm" firstAttribute="top" secondItem="tAt-aP-EcC" secondAttribute="top" id="skd-t7-L4d"/>
                 <constraint firstItem="tAt-aP-EcC" firstAttribute="trailing" secondItem="4QN-Y6-nOm" secondAttribute="trailing" id="uZn-Sx-onY"/>

@@ -19,7 +19,6 @@ class NoteNetworkProvider: NoteProviderContract {
         case notePutError
     }
     
-    
     func putNote(note: Note) -> Promise<Bool> {
         return self.putNoteWeb(note: note)
     }

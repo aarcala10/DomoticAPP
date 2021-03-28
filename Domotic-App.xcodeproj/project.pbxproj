@@ -28,6 +28,7 @@
 		919C47342610CEE700E39F58 /* NoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C472C2610CEE700E39F58 /* NoteEntity.swift */; };
 		919C47352610CEE700E39F58 /* NoteWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C472D2610CEE700E39F58 /* NoteWireframe.swift */; };
 		919C47392610CF5600E39F58 /* NoteNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C47382610CF5600E39F58 /* NoteNetworkProvider.swift */; };
+		919C4741261100DC00E39F58 /* LocalAuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C4740261100DC00E39F58 /* LocalAuthenticationProvider.swift */; };
 		91BA3EF5260F511F00EC7B80 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EED260F511F00EC7B80 /* LoginContract.swift */; };
 		91BA3EF6260F511F00EC7B80 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */; };
 		91BA3EF7260F511F00EC7B80 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */; };
@@ -96,6 +97,7 @@
 		919C472C2610CEE700E39F58 /* NoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntity.swift; sourceTree = "<group>"; };
 		919C472D2610CEE700E39F58 /* NoteWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWireframe.swift; sourceTree = "<group>"; };
 		919C47382610CF5600E39F58 /* NoteNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNetworkProvider.swift; sourceTree = "<group>"; };
+		919C4740261100DC00E39F58 /* LocalAuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationProvider.swift; sourceTree = "<group>"; };
 		91BA3EED260F511F00EC7B80 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		91BA3EEE260F511F00EC7B80 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		91BA3EEF260F511F00EC7B80 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
@@ -226,6 +228,14 @@
 				919C472B2610CEE700E39F58 /* NoteView.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		919C473F2611009400E39F58 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				919C4740261100DC00E39F58 /* LocalAuthenticationProvider.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 		91BA3EEC260F510700EC7B80 /* Login */ = {
@@ -396,6 +406,7 @@
 		91E52A36260A79B60095304B /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				919C473F2611009400E39F58 /* System */,
 				91E52A3A260A7A280095304B /* Network */,
 			);
 			path = Providers;
@@ -585,6 +596,7 @@
 				919C471F26109C8600E39F58 /* Note.swift in Sources */,
 				91E52A07260A617D0095304B /* LoadingViewController.swift in Sources */,
 				91E52A4A260A81EB0095304B /* Room.swift in Sources */,
+				919C4741261100DC00E39F58 /* LocalAuthenticationProvider.swift in Sources */,
 				91BA3EF8260F511F00EC7B80 /* LoginInteractor.swift in Sources */,
 				91E529E0260A5CDC0095304B /* MenuTabBarContract.swift in Sources */,
 				91E529E4260A5CDC0095304B /* MenuTabBarView.swift in Sources */,
