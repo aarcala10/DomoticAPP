@@ -8,5 +8,9 @@
 import Foundation
 
 struct Note {
+    var note: String
     
+    init(note: String) {
+        self.note = note
+    }
 }

@@ -42,8 +42,10 @@ class LoginPresenter: BasePresenter, LoginPresenterContract {
             interactor.signup(signup: signup)
         }.done { [weak self] signed in
             if signed {
+                self?.view.showAlertPopUp(message: "SignUp is Succesfull!!")
+            } else {
                 self?.view.showAlertPopUp(message: "An error has occurred")
-            } else {}
+            }
         }.catch { error in
             self.view.feedbackError(error: error)
         }

@@ -10,18 +10,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Domotic_App" customModuleProvider="target">
             <connections>
+                <outlet property="confPasswordSignUpLabel" destination="EFb-0q-ADi" id="3vY-Bn-378"/>
                 <outlet property="confPasswordSignupField" destination="5e1-TG-1SU" id="Mil-ID-LYp"/>
+                <outlet property="emailSignUpLabel" destination="IMC-0C-Gdc" id="h83-VO-nDc"/>
                 <outlet property="emailSignupField" destination="ftr-oz-h3s" id="uwH-M5-4XA"/>
                 <outlet property="loginBtn" destination="xv6-Fm-UjI" id="m1t-5P-9eG"/>
                 <outlet property="loginBtnViewer" destination="8aB-Uq-7xc" id="eOn-M5-nbv"/>
                 <outlet property="loginViewContent" destination="7jR-ZB-IjY" id="hK8-M7-KAf"/>
                 <outlet property="passwordLoginField" destination="kIx-ga-Nhu" id="AUV-fG-fQo"/>
+                <outlet property="passwordLoginLabel" destination="JNp-Xa-0Sq" id="7A8-0N-5Ke"/>
+                <outlet property="passwordSignUpLabel" destination="xWn-j8-Xgi" id="9qt-mn-QXV"/>
                 <outlet property="passwordSignupField" destination="hG2-h3-8xl" id="hYX-Oo-Vlr"/>
                 <outlet property="signupBtn" destination="vS4-4a-aZP" id="yrn-Ca-fqV"/>
                 <outlet property="signupViewContent" destination="k8R-zn-Ofn" id="g9K-1V-YmB"/>
                 <outlet property="sigupBtnViewer" destination="1kO-q2-x6B" id="8UT-h3-GpB"/>
                 <outlet property="userLoginField" destination="rfz-3Z-ss3" id="ay0-io-SLa"/>
+                <outlet property="userSignUpLabel" destination="nXj-hY-dxe" id="5ab-8S-ENw"/>
                 <outlet property="userSignupField" destination="3dy-KB-Eym" id="F5q-9f-yh7"/>
+                <outlet property="userloginLabel" destination="0t8-NF-OBi" id="eTy-SF-58C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,7 +52,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-Wj-lff">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-sH-hTm" userLabel="userLoginLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="98" height="26.5"/>
@@ -59,6 +65,12 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="name"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-NF-OBi">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="rfz-3Z-ss3" secondAttribute="trailing" id="Mhi-PJ-obK"/>
@@ -77,7 +89,7 @@
                                                     <rect key="frame" x="0.0" y="87" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-5F-LxJ">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWx-Jc-gq5" userLabel="passwordLoginLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="26.5"/>
@@ -90,6 +102,12 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="one-time-code"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNp-Xa-0Sq">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="kIx-ga-Nhu" secondAttribute="trailing" id="hEk-da-Xr2"/>
@@ -178,7 +196,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-Fq-qmn">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8Z-0u-6Cj" userLabel="userLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="98" height="26.5"/>
@@ -191,8 +209,16 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="name"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXj-hY-dxe">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
+                                                                <constraint firstItem="nXj-hY-dxe" firstAttribute="leading" secondItem="8zI-Fq-qmn" secondAttribute="leading" id="0kO-bb-tLe"/>
+                                                                <constraint firstItem="nXj-hY-dxe" firstAttribute="top" secondItem="3dy-KB-Eym" secondAttribute="bottom" constant="4" id="ONg-rf-Xvf"/>
                                                                 <constraint firstAttribute="trailing" secondItem="3dy-KB-Eym" secondAttribute="trailing" id="jMr-r9-9Ua"/>
                                                             </constraints>
                                                         </stackView>
@@ -209,7 +235,7 @@
                                                     <rect key="frame" x="0.0" y="87" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kqG-AV-Nh6">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdF-b1-UIx" userLabel="emailLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="51.5" height="26.5"/>
@@ -222,6 +248,12 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMC-0C-Gdc">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="ftr-oz-h3s" secondAttribute="trailing" id="ArX-dt-8Qy"/>
@@ -240,7 +272,7 @@
                                                     <rect key="frame" x="0.0" y="174" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9CN-eT-L3t">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwn-uO-8k6" userLabel="passwordLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="26.5"/>
@@ -253,6 +285,12 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES" textContentType="one-time-code"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWn-j8-Xgi">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="hG2-h3-8xl" secondAttribute="trailing" id="0wN-b7-bQ7"/>
@@ -271,7 +309,7 @@
                                                     <rect key="frame" x="0.0" y="261" width="414" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-ei-0db">
-                                                            <rect key="frame" x="32" y="0.5" width="350" height="64.5"/>
+                                                            <rect key="frame" x="32" y="-26.5" width="350" height="118.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Confirm Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feB-no-6hT" userLabel="confirmPasswordLabel">
                                                                     <rect key="frame" x="0.0" y="0.0" width="178.5" height="26.5"/>
@@ -284,6 +322,12 @@
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="one-time-code"/>
                                                                 </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-0q-ADi">
+                                                                    <rect key="frame" x="0.0" y="68.5" width="50" height="50"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.90352809430000003" green="0.05124263465" blue="0.074405543510000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="5e1-TG-1SU" secondAttribute="trailing" id="QbL-t0-nIH"/>

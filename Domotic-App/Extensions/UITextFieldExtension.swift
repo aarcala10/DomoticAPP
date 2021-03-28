@@ -12,16 +12,16 @@ extension UITextField {
     func isUserValid(user: String) -> Bool {
         let userRegEx = "^\\w{6,18}$"
         let trimmedString = user.trimmingCharacters(in: .whitespaces)
-        let validatePassord = NSPredicate(format:"SELF MATCHES %@", userRegEx)
-        let isvalidateUser = validatePassord.evaluate(with: trimmedString)
+        let validateUser = NSPredicate(format:"SELF MATCHES %@", userRegEx)
+        let isvalidateUser = validateUser.evaluate(with: trimmedString)
         return isvalidateUser
      }
     
     func isPasswordValid(password: String) -> Bool {
           let passRegEx = "^\\w{6,18}$"
           let trimmedString = password.trimmingCharacters(in: .whitespaces)
-          let validatePassord = NSPredicate(format:"SELF MATCHES %@", passRegEx)
-          let isvalidatePass = validatePassord.evaluate(with: trimmedString)
+          let validatePassword = NSPredicate(format:"SELF MATCHES %@", passRegEx)
+          let isvalidatePass = validatePassword.evaluate(with: trimmedString)
           return isvalidatePass
        }
     
@@ -36,7 +36,14 @@ extension UITextField {
           let validateEmail = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
           let isValidateEmail = validateEmail.evaluate(with: trimmedString)
           return isValidateEmail
-       }
+    }
+    
+    func isNoteValid(note: String) -> Bool {
+        if note != ""{
+            return true
+        }
+        return false
+     }
     
     func showInvalidate(){
         self.text = ""
