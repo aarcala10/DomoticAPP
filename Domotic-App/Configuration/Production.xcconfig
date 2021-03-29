@@ -1,0 +1,19 @@
+//
+//  Production.xcconfig
+//  Domotic-App
+//
+//  Created by Adrian Arcalá Ocón on 29/3/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug (devlopment).xcconf"
+#include "Pods/Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release (devlopment).xcconf"
+
+
+APP_ENVIRONMENT=Production
+
+// App Settings
+APP_NAME = Domotic-App
+APP_BUNDLE_ID = com.aarcala.Domotic-App.pro

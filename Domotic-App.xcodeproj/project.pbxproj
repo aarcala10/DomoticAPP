@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		787BF3FDC478AE063E1D5201 /* Pods_Domotic_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */; };
+		1A2B5F16284FD1390DDED674 /* Pods_Domotic_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA574BC9C0CBB5EF45AEB4 /* Pods_Domotic_App.framework */; };
 		910EAC8F260D159A00F0692C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */; };
 		910EACAF260D222400F0692C /* RoomDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACA7260D222400F0692C /* RoomDetailPresenter.swift */; };
 		910EACB0260D222400F0692C /* RoomDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910EACA8260D222400F0692C /* RoomDetailEntity.swift */; };
@@ -40,6 +40,7 @@
 		91BA3F0F260FA6BA00EC7B80 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F0E260FA6BA00EC7B80 /* UITextFieldExtension.swift */; };
 		91BA3F14260FB27000EC7B80 /* LoginNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F13260FB27000EC7B80 /* LoginNetworkProvider.swift */; };
 		91BA3F17260FB30000EC7B80 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA3F16260FB30000EC7B80 /* Login.swift */; };
+		91D10FB0261232A000C3E20D /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D10FAF261232A000C3E20D /* Enviroment.swift */; };
 		91E529C3260A5BD00095304B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C2260A5BD00095304B /* AppDelegate.swift */; };
 		91E529C5260A5BD00095304B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E529C4260A5BD00095304B /* SceneDelegate.swift */; };
 		91E529CC260A5BD00095304B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E529CB260A5BD00095304B /* Assets.xcassets */; };
@@ -76,7 +77,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.debug.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug.xcconfig"; sourceTree = "<group>"; };
+		1EBA0F8BB93BC7888E6F171C /* Pods-Domotic-App.debug (devlopment).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.debug (devlopment).xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug (devlopment).xcconfig"; sourceTree = "<group>"; };
+		4CBA574BC9C0CBB5EF45AEB4 /* Pods_Domotic_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domotic_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EAC8E260D159A00F0692C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		910EACA7260D222400F0692C /* RoomDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetailPresenter.swift; sourceTree = "<group>"; };
 		910EACA8260D222400F0692C /* RoomDetailEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomDetailEntity.swift; sourceTree = "<group>"; };
@@ -109,6 +111,9 @@
 		91BA3F0E260FA6BA00EC7B80 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		91BA3F13260FB27000EC7B80 /* LoginNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkProvider.swift; sourceTree = "<group>"; };
 		91BA3F16260FB30000EC7B80 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		91D10FAD2612318100C3E20D /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		91D10FAE2612319000C3E20D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		91D10FAF261232A000C3E20D /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		91E529BF260A5BD00095304B /* Domotic-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domotic-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E529C2260A5BD00095304B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E529C4260A5BD00095304B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,8 +149,9 @@
 		91E52A4F260ABA400095304B /* DetailRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoom.swift; sourceTree = "<group>"; };
 		91E52A7B260BB0EA0095304B /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		91E52A7C260BB0EA0095304B /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
-		B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.release.xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release.xcconfig"; sourceTree = "<group>"; };
-		D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domotic_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3695C760810B54E40A4BF45 /* Pods-Domotic-App.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.release (production).xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release (production).xcconfig"; sourceTree = "<group>"; };
+		D09FF1903C874979E018B98E /* Pods-Domotic-App.release (devlopment).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.release (devlopment).xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.release (devlopment).xcconfig"; sourceTree = "<group>"; };
+		EE25A9B222F396B4F69DD085 /* Pods-Domotic-App.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domotic-App.debug (production).xcconfig"; path = "Target Support Files/Pods-Domotic-App/Pods-Domotic-App.debug (production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				787BF3FDC478AE063E1D5201 /* Pods_Domotic_App.framework in Frameworks */,
+				1A2B5F16284FD1390DDED674 /* Pods_Domotic_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +169,7 @@
 		095091F05ED7974B4EBF8124 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D21F8D5751FEC65664C64D4D /* Pods_Domotic_App.framework */,
+				4CBA574BC9C0CBB5EF45AEB4 /* Pods_Domotic_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,8 +177,10 @@
 		42F53B619B24BE257C328139 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */,
-				B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */,
+				1EBA0F8BB93BC7888E6F171C /* Pods-Domotic-App.debug (devlopment).xcconfig */,
+				EE25A9B222F396B4F69DD085 /* Pods-Domotic-App.debug (production).xcconfig */,
+				D09FF1903C874979E018B98E /* Pods-Domotic-App.release (devlopment).xcconfig */,
+				B3695C760810B54E40A4BF45 /* Pods-Domotic-App.release (production).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -203,6 +211,10 @@
 		919C47242610CCD100E39F58 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				91E529D0260A5BD00095304B /* Info.plist */,
+				91D10FAF261232A000C3E20D /* Enviroment.swift */,
+				91D10FAD2612318100C3E20D /* Development.xcconfig */,
+				91D10FAE2612319000C3E20D /* Production.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -292,7 +304,6 @@
 				91E529C2260A5BD00095304B /* AppDelegate.swift */,
 				91E529C4260A5BD00095304B /* SceneDelegate.swift */,
 				91E529CB260A5BD00095304B /* Assets.xcassets */,
-				91E529D0260A5BD00095304B /* Info.plist */,
 			);
 			path = "Domotic-App";
 			sourceTree = "<group>";
@@ -629,6 +640,7 @@
 				910EACC0260E4DBA00F0692C /* UIViewExtension.swift in Sources */,
 				919C47392610CF5600E39F58 /* NoteNetworkProvider.swift in Sources */,
 				910EACAF260D222400F0692C /* RoomDetailPresenter.swift in Sources */,
+				91D10FB0261232A000C3E20D /* Enviroment.swift in Sources */,
 				91BA3EF9260F511F00EC7B80 /* LoginView.swift in Sources */,
 				910EACB5260D222400F0692C /* RoomDetailWireframe.swift in Sources */,
 				91BA3F17260FB30000EC7B80 /* Login.swift in Sources */,
@@ -642,8 +654,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		91E529D1260A5BD00095304B /* Debug */ = {
+		91D10FB22612331300C3E20D /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAE2612319000C3E20D /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -701,10 +714,32 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (Production)";
 		};
-		91E529D2260A5BD00095304B /* Release */ = {
+		91D10FB32612331300C3E20D /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAE2612319000C3E20D /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW5J8VSJ22;
+				INFOPLIST_FILE = "Domotic-App/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala.Domotic-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Production)";
+		};
+		91D10FB42612332E00C3E20D /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAE2612319000C3E20D /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -756,51 +791,188 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release (Production)";
 		};
-		91E529D4260A5BD00095304B /* Debug */ = {
+		91D10FB52612332E00C3E20D /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C0DC1111AD244E5BFCB3FF /* Pods-Domotic-App.debug.xcconfig */;
+			baseConfigurationReference = 91D10FAE2612319000C3E20D /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Domotic-App/Domotic-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW5J8VSJ22;
-				INFOPLIST_FILE = "Domotic-App/Info.plist";
+				INFOPLIST_FILE = "Domotic-App/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala..Domotic-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala.Domotic-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Release (Production)";
 		};
-		91E529D5260A5BD00095304B /* Release */ = {
+		91E529D1260A5BD00095304B /* Debug (Devlopment) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63B56490EE1AD36B2342E2E /* Pods-Domotic-App.release.xcconfig */;
+			baseConfigurationReference = 91D10FAD2612318100C3E20D /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Devlopment)";
+		};
+		91E529D2260A5BD00095304B /* Release (Devlopment) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAD2612318100C3E20D /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Devlopment)";
+		};
+		91E529D4260A5BD00095304B /* Debug (Devlopment) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAD2612318100C3E20D /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Domotic-App/Domotic-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VW5J8VSJ22;
-				INFOPLIST_FILE = "Domotic-App/Info.plist";
+				INFOPLIST_FILE = "Domotic-App/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala..Domotic-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala.Domotic-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Debug (Devlopment)";
+		};
+		91E529D5260A5BD00095304B /* Release (Devlopment) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D10FAD2612318100C3E20D /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW5J8VSJ22;
+				INFOPLIST_FILE = "Domotic-App/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aarcala.Domotic-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release (Devlopment)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -808,20 +980,24 @@
 		91E529BA260A5BD00095304B /* Build configuration list for PBXProject "Domotic-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91E529D1260A5BD00095304B /* Debug */,
-				91E529D2260A5BD00095304B /* Release */,
+				91E529D1260A5BD00095304B /* Debug (Devlopment) */,
+				91D10FB22612331300C3E20D /* Debug (Production) */,
+				91E529D2260A5BD00095304B /* Release (Devlopment) */,
+				91D10FB42612332E00C3E20D /* Release (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Devlopment)";
 		};
 		91E529D3260A5BD00095304B /* Build configuration list for PBXNativeTarget "Domotic-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91E529D4260A5BD00095304B /* Debug */,
-				91E529D5260A5BD00095304B /* Release */,
+				91E529D4260A5BD00095304B /* Debug (Devlopment) */,
+				91D10FB32612331300C3E20D /* Debug (Production) */,
+				91E529D5260A5BD00095304B /* Release (Devlopment) */,
+				91D10FB52612332E00C3E20D /* Release (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Devlopment)";
 		};
 /* End XCConfigurationList section */
 	};
