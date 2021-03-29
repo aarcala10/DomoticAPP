@@ -9,7 +9,7 @@ Formada por una tabla con las habitaciones recibidos de la API.
 Al seleccionar un elemento, se mostrarán los detalles de esta habitación. Desde aquí se podrá cambiar su estado y este cambio se enviará a la API.
 
 #### Note
-Contiene un campo de texto y un botón para enviar una cadena de texto a la API.
+Contiene un campo de texto y un botón para enviar una cadena de texto a la API.   ¡¡¡¡¡ PARA MANDAR LA NOTA FaceID !!!!!
 
 #### Login
 
