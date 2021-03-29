@@ -472,6 +472,7 @@
 				91E529BC260A5BD00095304B /* Frameworks */,
 				91E529BD260A5BD00095304B /* Resources */,
 				0062DB0ACC57CD8EC558EACA /* [CP] Embed Pods Frameworks */,
+				9116A9DC2612649C00D6D4D0 /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -549,6 +550,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Domotic-App/Pods-Domotic-App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9116A9DC2612649C00D6D4D0 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		F6EBABB7A61885C68737B940 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
