@@ -23,7 +23,6 @@ class LoginNetworkProvider: LoginProviderContract {
         return self.signUp(signup: signup)
     }
     
-    
     private func logIn(login: Login) -> Promise<Bool> {
         return Promise<Bool> { promise in
             

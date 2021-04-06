@@ -24,7 +24,7 @@ class LoginInteractor: BaseInteractor, LoginInteractorContract {
         return Promise<Bool> { promise in
             firstly {
                 self.loginProvider.login(login: login)
-            }.done{ result in
+            }.done { result in
                 promise.fulfill(result)
             }.cauterize()
         }
@@ -34,7 +34,7 @@ class LoginInteractor: BaseInteractor, LoginInteractorContract {
         return Promise<Bool> { promise in
             firstly {
                 self.loginProvider.signup(signup: signup)
-            }.done{ result in
+            }.done { result in
                 promise.fulfill(result)
             }.cauterize()
         }

@@ -16,7 +16,6 @@ class NoteWireframe: BaseWireframe, NoteWireframeContract {
 
     weak var loadingDelegate: LoadingViewDelegate!
     
-
     /// Show basic loading
     /// - Parameters:
     ///   - text: text

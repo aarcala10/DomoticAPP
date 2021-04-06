@@ -9,7 +9,7 @@ import Foundation
 import PromiseKit
 import Alamofire
 
-protocol NoteProviderContract{
+protocol NoteProviderContract {
     func putNote(note: Note) -> Promise<Bool>
 }
 
@@ -34,14 +34,18 @@ class NoteNetworkProvider: NoteProviderContract {
             
             let parameter: [String: String] = [kAPIResultsKey: note.note]
             let url = getUrlNote()
-            AF.request(url, method: .put, parameters: parameter, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
-                guard let _ = try? response.result.get() as? [String: String] else {
-                    promise.reject(NoteNetworkError.notePutError)
-                    return
+            AF.request(
+                url, method: .put,
+                parameters: parameter,
+                encoding: JSONEncoding.default,
+                headers: nil).responseJSON { response in
+                    guard let _ = try? response.result.get() as? [String: String] else {
+                        promise.reject(NoteNetworkError.notePutError)
+                        return
+                    }
+                    
+                    promise.fulfill(true)
                 }
-                
-                promise.fulfill(true)
-            }
         }
     }
     

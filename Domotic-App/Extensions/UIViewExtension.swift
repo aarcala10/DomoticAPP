@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIView {
-    func setContentViewDesign(){
+    func setContentViewDesign() {
         self.layer.cornerRadius = 8
         self.layer.backgroundColor = UIColor.systemGray4.cgColor
         self.layer.shadowColor = UIColor.gray.cgColor

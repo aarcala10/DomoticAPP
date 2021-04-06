@@ -16,7 +16,6 @@ class RoomListWireframe: BaseWireframe, RoomListWireframeContract {
 
     weak var loadingDelegate: LoadingViewDelegate!
     
-
     /// Show basic loading
     /// - Parameters:
     ///   - text: text

@@ -17,7 +17,7 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
     var entity: RoomListEntityContract!
     var wireframe: RoomListWireframeContract!
     
-    var roomsList : [Room] = []
+    var roomsList: [Room] = []
 
     func viewDidLoad() {
 
@@ -31,7 +31,7 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
             self?.roomsList = roomsListData
             self?.view.updateData(rooms: roomsListData)
             
-        }.catch{ error in
+        }.catch { error in
             self.view.feedbackError(error: error)
         }
     }
@@ -40,7 +40,6 @@ class RoomListPresenter: BasePresenter, RoomListPresenterContract {
         wireframe?.showDetailRoomView(room: name)
     }
 }
-
 
 // MARK: - RoomListInteractorOutputContract
 extension RoomListPresenter: RoomListInteractorOutputContract {

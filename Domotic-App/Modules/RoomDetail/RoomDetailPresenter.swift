@@ -53,7 +53,6 @@ class RoomDetailPresenter: BasePresenter, RoomDetailPresenterContract {
         }
     }
     
-    
 }
 
 // MARK: - RoomDetailInteractorOutputContract

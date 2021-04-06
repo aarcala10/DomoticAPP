@@ -28,13 +28,13 @@ extension UIViewController {
     ///   - alertMessage: Mensaje del alert
     ///   - alertTitle: Título del alert
     ///   - alertActionTitle: Título de la acción
-    func showAlert(_ alertMessage: String,
-                               _ alertTitle: String = "Error",
-                               _ alertActionTitle: String = "OK") {
-
-        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: alertActionTitle, style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+    func showAlert(
+        _ alertMessage: String,
+        _ alertTitle: String = "Error",
+        _ alertActionTitle: String = "OK") {
+            let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: alertActionTitle, style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
     }
     
 }

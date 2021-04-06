@@ -16,7 +16,6 @@ class LoginWireframe: BaseWireframe, LoginWireframeContract {
 
     weak var loadingDelegate: LoadingViewDelegate!
     
-
     /// Show basic loading
     /// - Parameters:
     ///   - text: text

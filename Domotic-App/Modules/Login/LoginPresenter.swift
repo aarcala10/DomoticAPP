@@ -31,7 +31,7 @@ class LoginPresenter: BasePresenter, LoginPresenterContract {
         }.done { [weak self] loged in
             if loged {
                 self?.view.showAlertPopUp(message: "LogIn is Succesfull!!")
-            }else {self?.view.showAlertPopUp(message: "An error has occurred")}
+            } else {self?.view.showAlertPopUp(message: "An error has occurred")}
         }.catch { error in
             self.view.feedbackError(error: error)
         }
@@ -51,7 +51,6 @@ class LoginPresenter: BasePresenter, LoginPresenterContract {
         }
     }
 }
-
 
 // MARK: - LoginInteractorOutputContract
 extension LoginPresenter: LoginInteractorOutputContract {

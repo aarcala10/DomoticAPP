@@ -17,7 +17,7 @@ class LoginView: BaseViewController, LoginViewContract {
     @IBOutlet weak var loginViewContent: UIView!
     @IBOutlet weak var signupViewContent: UIView!
     
-    //MARK: LOGIN
+        // MARK: LOGIN
     @IBOutlet weak var userLoginField: UITextField!
     @IBOutlet weak var userloginLabel: UILabel!
     @IBOutlet weak var passwordLoginField: UITextField!
@@ -25,7 +25,7 @@ class LoginView: BaseViewController, LoginViewContract {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var sigupBtnViewer: UIButton!
     
-    //MARK: SIGNUP
+        // MARK: SIGNUP
     @IBOutlet weak var userSignupField: UITextField!
     @IBOutlet weak var userSignUpLabel: UILabel!
     @IBOutlet weak var emailSignupField: UITextField!
@@ -66,14 +66,14 @@ class LoginView: BaseViewController, LoginViewContract {
         
     }
     
-    private func setView(login: Bool){
+    private func setView(login: Bool) {
         loginViewContent.isHidden = !login
         signupViewContent.isHidden = login
         
     }
     
-    private func logIn(){
-        if validateTextFieldLogIn(){
+    private func logIn() {
+        if validateTextFieldLogIn() {
             let login = Login(
                 username: userLoginField.text!,
                 password: passwordLoginField.text!
@@ -84,8 +84,8 @@ class LoginView: BaseViewController, LoginViewContract {
         
     }
     
-    private func signUp(){
-        if validateTextFieldSigUp(){
+    private func signUp() {
+        if validateTextFieldSigUp() {
             let signup = Signup(
                 username: userSignupField.text!,
                 password: passwordSignupField.text!,
@@ -96,7 +96,7 @@ class LoginView: BaseViewController, LoginViewContract {
         }
     }
     
-    func clearInputs(){
+    func clearInputs() {
         userLoginField.text?.removeAll()
         userLoginField.rightView?.isHidden = true
         passwordLoginField.text?.removeAll()
@@ -126,7 +126,7 @@ class LoginView: BaseViewController, LoginViewContract {
     }
     
     func showAlertPopUp(message: String) {
-        showAlert(message, "","OK")
+        showAlert(message, "", "OK")
     }
     
     func feedbackError(error: Error) {
@@ -149,16 +149,16 @@ extension LoginView: UITextFieldDelegate {
         
         switch textField {
         case userSignupField:
-            let _ = emailSignupField.becomeFirstResponder()
+            emailSignupField.becomeFirstResponder()
         case emailSignupField:
-            let _ =  passwordSignupField.becomeFirstResponder()
+            passwordSignupField.becomeFirstResponder()
         case passwordSignupField:
-            let _ = confPasswordSignupField.becomeFirstResponder()
+            confPasswordSignupField.becomeFirstResponder()
         case confPasswordSignupField:
             textFieldDidEndEditing(confPasswordSignupField)
             signUp()
         case userLoginField:
-            let _ = passwordLoginField.becomeFirstResponder()
+            passwordLoginField.becomeFirstResponder()
         default:
             textFieldDidEndEditing(passwordLoginField)
             logIn()
@@ -171,14 +171,16 @@ extension LoginView: UITextFieldDelegate {
         
         if  userSignupField.isUserValid(user: userSignupField.text ?? "") {
             userSignUpLabel.text = ""
-            if emailSignupField.isEmailValidate(email: emailSignupField.text ?? ""){
+            if emailSignupField.isEmailValidate(email: emailSignupField.text ?? "") {
                 emailSignUpLabel.text = ""
-                if passwordSignupField.isPasswordValid(password: passwordSignupField.text ?? ""){
+                if passwordSignupField.isPasswordValid(password: passwordSignupField.text ?? "") {
                     passwordSignUpLabel.text = ""
-                    if confPasswordSignupField.isConfirmPasswordValidate(textPassword: passwordSignupField.text ?? "", textConfirmPassword: confPasswordSignupField.text ?? "") {
+                    if confPasswordSignupField.isConfirmPasswordValidate(
+                        textPassword: passwordSignupField.text ?? "",
+                        textConfirmPassword: confPasswordSignupField.text ?? "") {
                         confPasswordSignUpLabel.text = ""
                         return true
-                    }else {
+                    } else {
                         confPasswordSignupField.showInvalidate()
                         confPasswordSignUpLabel.text = "The passwords aren't the same"
                         return false
@@ -188,12 +190,12 @@ extension LoginView: UITextFieldDelegate {
                     passwordSignUpLabel.text = "Min. 6 characters"
                     return false
                 }
-            }else {
+            } else {
                 emailSignupField.showInvalidate()
                 emailSignUpLabel.text = "Email format is incorrect"
                 return false
             }
-        }else {
+        } else {
             userSignupField.showInvalidate()
             userSignUpLabel.text = "Min. 6 characters"
             return false
@@ -204,7 +206,7 @@ extension LoginView: UITextFieldDelegate {
         
         if  userLoginField.isUserValid(user: userLoginField.text ?? "") {
             userloginLabel.text = ""
-            if passwordLoginField.isPasswordValid(password: passwordLoginField.text ?? ""){
+            if passwordLoginField.isPasswordValid(password: passwordLoginField.text ?? "") {
                 passwordLoginLabel.text = ""
                 return true
             } else {
@@ -212,7 +214,7 @@ extension LoginView: UITextFieldDelegate {
                 passwordLoginLabel.text = "Min. 6 characters"
                 return false
             }
-        }else {
+        } else {
             userLoginField.showInvalidate()
             userloginLabel.text = "Min. 6 characters"
             return false

@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-struct DetailRoom: ImmutableMappable{
+struct DetailRoom: ImmutableMappable {
     
     var light: String?
     var blinds: String?
@@ -30,7 +30,7 @@ struct DetailRoom: ImmutableMappable{
     }
 }
 
-struct Air: ImmutableMappable{
+struct Air: ImmutableMappable {
     
     var power: String?
     var temp: Int?

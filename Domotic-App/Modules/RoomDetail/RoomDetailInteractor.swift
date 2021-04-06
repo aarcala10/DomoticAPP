@@ -35,19 +35,18 @@ class RoomDetailInteractor: BaseInteractor, RoomDetailInteractorContract {
         return roomSelected
     }
     
-    func putDetail(room: String, detail: (String, String)) -> Promise<[String:Any]> {
-        return Promise<[String:Any]> { promise in
-            firstly{
-                self.roomProvider.putDetailRoom(room: room, detail: detail)
+    func putDetail(room: String, detail: (String, String)) -> Promise<[ String: Any ]> {
+        return Promise<[ String: Any ]> { promise in
+            firstly { self.roomProvider.putDetailRoom(room: room, detail: detail)
             }.done { detail in
                 promise.fulfill(detail)
             }.cauterize()
         }
     }
     
-    func putAirDetail(room: String, detail: (String, Int)) -> Promise<[String:Any]> {
-        return Promise<[String:Any]> { promise in
-            firstly{
+    func putAirDetail(room: String, detail: (String, Int)) -> Promise<[ String: Any ]> {
+        return Promise<[ String: Any ]> { promise in
+            firstly {
                 self.roomProvider.putAirDetailRoom(room: room, detail: detail)
             }.done { detail in
                 promise.fulfill(detail)

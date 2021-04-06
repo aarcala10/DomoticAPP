@@ -16,7 +16,6 @@ class MenuTabBarWireframe: BaseWireframe, MenuTabBarWireframeContract {
 
     weak var loadingDelegate: LoadingViewDelegate!
     
-
     /// Show basic loading
     /// - Parameters:
     ///   - text: text

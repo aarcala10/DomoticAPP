@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 import PromiseKit
 
-protocol RoomProviderContract{
+protocol RoomProviderContract {
     func getRooms() -> Promise<[Room]>
     func getDetailRoom(nameRoom: String) -> Promise<DetailRoom>
-    func putDetailRoom(room: String, detail: (String, String)) -> Promise<[String:Any]>
-    func putAirDetailRoom(room: String, detail: (String, Int)) -> Promise<[String: Any]>
+    func putDetailRoom(room: String, detail: (String, String)) -> Promise<[ String: Any ]>
+    func putAirDetailRoom(room: String, detail: (String, Int)) -> Promise<[ String: Any ]>
 }
 
 class RoomNetworkProvider: RoomProviderContract {
@@ -30,14 +30,14 @@ class RoomNetworkProvider: RoomProviderContract {
         return self.getDetailPage(name: nameRoom)
     }
     
-    func putDetailRoom(room: String, detail: (String, String)) -> Promise<[String:Any]> {
+    func putDetailRoom(room: String, detail: (String, String)) -> Promise<[ String: Any ]> {
         return self.putDetail(room: room, detail: detail)
     }
-    func putAirDetailRoom(room: String, detail: (String, Int)) -> Promise<[String: Any]> {
+    func putAirDetailRoom(room: String, detail: (String, Int)) -> Promise<[ String: Any]> {
         return self.putAirDetail(room: room, detail: detail)
     }
     
-    //MARK: PRIVATE
+    // MARK: PRIVATE
     
     private let kAPIResultsKey = "rooms"
     
@@ -52,7 +52,6 @@ class RoomNetworkProvider: RoomProviderContract {
         return URL(string: kAPIURL+name+"/"+detail)!
     }
     
-    
     private func getHomePage() -> Promise<[Room]> {
         return Promise<[Room]> { promise in
             let url = getUrlHome()
@@ -63,10 +62,10 @@ class RoomNetworkProvider: RoomProviderContract {
                     return
                 }
                 var results: [Room] = []
-                for item in dataResults{
-                    if let room = try? Room(JSON: item){
+                for item in dataResults {
+                    if let room = try? Room(JSON: item) {
                         results.append(room)
-                    } else{
+                    } else {
                         promise.reject(RoomNetworkError.homePageLoadError)
                     }
                 }
@@ -87,7 +86,7 @@ class RoomNetworkProvider: RoomProviderContract {
                 
                 if let detailRoom = try? DetailRoom(JSON: data) {
                     promise.fulfill(detailRoom)
-                } else{
+                } else {
                     promise.reject(RoomNetworkError.detailPageLoadError)
                 }
             }
@@ -99,14 +98,18 @@ class RoomNetworkProvider: RoomProviderContract {
             
             let parameter: [String: Any] = [detail.0: detail.1]
             let url = getUrlRoom(name: room, detail: detail.0)
-            AF.request(url, method: .put, parameters: parameter, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
-                guard let data = try? response.result.get() as? [String: Any] else {
-                    promise.reject(RoomNetworkError.detailPageLoadError)
-                    return
+            AF.request(
+                url, method: .put,
+                parameters: parameter,
+                encoding: JSONEncoding.default,
+                headers: nil).responseJSON { response in
+                    guard let data = try? response.result.get() as? [String: Any] else {
+                        promise.reject(RoomNetworkError.detailPageLoadError)
+                        return
+                    }
+                    
+                    promise.fulfill(data)
                 }
-                
-                promise.fulfill(data)
-            }
         }
     }
     
@@ -115,14 +118,18 @@ class RoomNetworkProvider: RoomProviderContract {
             
             let parameter: [String: Any] = ["power": detail.0, "temp": detail.1]
             let url = getUrlRoom(name: room, detail: "air")
-            AF.request(url, method: .put, parameters: parameter, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
-                guard let data = try? response.result.get() as? [String: Any] else {
-                    promise.reject(RoomNetworkError.detailPageLoadError)
-                    return
+            AF.request(
+                url, method: .put,
+                parameters: parameter,
+                encoding: JSONEncoding.default,
+                headers: nil).responseJSON { response in
+                    guard let data = try? response.result.get() as? [String: Any] else {
+                        promise.reject(RoomNetworkError.detailPageLoadError)
+                        return
+                    }
+                    
+                    promise.fulfill(data)
                 }
-                
-                promise.fulfill(data)
-            }
         }
     }
 }

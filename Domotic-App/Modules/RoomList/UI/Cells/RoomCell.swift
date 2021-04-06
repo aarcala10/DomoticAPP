@@ -37,7 +37,7 @@ class RoomCell: UITableViewCell {
         
     }
     
-    func setView(view: UIView){
+    func setView(view: UIView) {
         
         view.layer.cornerRadius = 8
         view.layer.backgroundColor = UIColor.systemGray4.cgColor

@@ -21,7 +21,6 @@ protocol NoteViewContract: BaseViewController {
     func feedbackError(error: Error)
     func showAlertPopUp(message: String)
     
-    
 }
 
 protocol NotePresenterContract: BasePresenter {

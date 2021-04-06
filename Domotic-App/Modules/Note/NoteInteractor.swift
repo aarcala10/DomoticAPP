@@ -34,7 +34,7 @@ class NoteInteractor: BaseInteractor, NoteInteractorContract {
                 if isEnable {
                     self.laProvider.launchBiometricAuthentication().done { success in
                         if success {
-                            self.sendNoteAPI(note: note).done{ result in
+                            self.sendNoteAPI(note: note).done { result in
                                 promise.fulfill(result)
                             }
                         } else {
@@ -46,7 +46,7 @@ class NoteInteractor: BaseInteractor, NoteInteractorContract {
                 } else {
                     throw LoginError.biometricDisable
                 }
-            }.catch { error in
+            }.catch { _ in
                 promise.fulfill(false)
             }
         }
@@ -56,7 +56,7 @@ class NoteInteractor: BaseInteractor, NoteInteractorContract {
         return Promise<Bool> { promise in
             firstly {
                 self.noteProvider.putNote(note: note)
-            }.done{ result in
+            }.done { result in
                 promise.fulfill(result)
             }.cauterize()
         }

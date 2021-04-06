@@ -38,7 +38,7 @@ class LocalAuthenticationProvider: LocalAuthenticationProviderContract {
     func launchBiometricAuthentication() -> Promise<Bool> {
         return Promise<Bool> { promise in
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: "Login") { success, error in
+                                   localizedReason: "Login") { success, _ in
                 promise.fulfill(success)
             }
         }
@@ -48,4 +48,3 @@ class LocalAuthenticationProvider: LocalAuthenticationProviderContract {
         return context.biometryType == .faceID
     }
 }
-

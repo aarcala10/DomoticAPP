@@ -32,7 +32,6 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     var details: DetailRoom?
     var pickerData = Array(0...35)
     
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,15 +68,15 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     }
     
     private func setupData() {
-        if details?.light != nil{
+        if details?.light != nil {
             setSwitchLight()
             ligthtContentView.isHidden = false
         }
-        if details?.blinds != nil{
+        if details?.blinds != nil {
             setSwitchBlinds()
             blindsContentView.isHidden = false
         }
-        if details?.door != nil{
+        if details?.door != nil {
             setSwitchDoor()
             doorContentView.isHidden = false
         }
@@ -108,7 +107,7 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     
     private func setSwitchAir() {
 
-        if let temp = self.details?.air.temp{
+        if let temp = self.details?.air.temp {
             tempPicker.selectRow(temp, inComponent: 0, animated: false)
             
             if self.details?.air.power == "on" {
@@ -127,25 +126,24 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         presenter.putAirDetail(room: room, detail: detail)
     }
     
-    
     @IBAction func lightSwitchAction(_ sender: UISwitch) {
-        if (sender.isOn == true){
+        if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("light", "on"))
-        }else {
+        } else {
             putDetail(room: self.title!.lowercased(), detail: ("light", "off"))
         }
     }
     @IBAction func blindsSwitchAction(_ sender: UISwitch) {
-        if (sender.isOn == true){
+        if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("blinds", "open"))
-        }else {
+        } else {
             putDetail(room: self.title!.lowercased(), detail: ("blinds", "close"))
         }
     }
     @IBAction func doorSwitchAction(_ sender: UISwitch) {
-        if (sender.isOn == true){
+        if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("door", "open"))
-        }else {
+        } else {
             putDetail(room: self.title!.lowercased(), detail: ("door", "close"))
         }
     }
@@ -154,12 +152,11 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         let temp = tempPicker.selectedRow(inComponent: 0)
         if (sender.isOn == true){
             putAirDetail(room: self.title!.lowercased(), detail: ("on", temp))
-        }else {
+        } else {
             putAirDetail(room: self.title!.lowercased(), detail: ("off", temp))
         }
     }
 }
-
 
 extension RoomDetailView: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

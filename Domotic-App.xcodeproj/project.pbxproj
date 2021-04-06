@@ -200,13 +200,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		919C47242610CCD100E39F58 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
 		919C47252610CED100E39F58 /* Note */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,12 +275,10 @@
 		91E529C1260A5BD00095304B /* Domotic-App */ = {
 			isa = PBXGroup;
 			children = (
-				919C47242610CCD100E39F58 /* Configuration */,
 				91E52A0E260A648A0095304B /* Extensions */,
 				91E52A01260A617D0095304B /* Components */,
 				91E52A47260A80050095304B /* Models */,
 				91E529E9260A5CE20095304B /* Modules */,
-				91E52A0A260A640A0095304B /* Resources */,
 				91E52A36260A79B60095304B /* Providers */,
 				91E529C2260A5BD00095304B /* AppDelegate.swift */,
 				91E529C4260A5BD00095304B /* SceneDelegate.swift */,
@@ -360,13 +351,6 @@
 				91E52A04260A617D0095304B /* LoadingView.xib */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		91E52A0A260A640A0095304B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		91E52A0E260A648A0095304B /* Extensions */ = {

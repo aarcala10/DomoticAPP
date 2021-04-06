@@ -18,7 +18,6 @@ class NoteView: BaseViewController, NoteViewContract {
     @IBOutlet weak var sendNoteBtn: UIButton!
     @IBOutlet weak var noteErrorLabel: UILabel!
     
-    
 	// MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +53,7 @@ class NoteView: BaseViewController, NoteViewContract {
     }
     
     func showAlertPopUp(message: String) {
-        showAlert(message, "","OK")
+        showAlert(message, "", "OK")
     }
     
     func feedbackError(error: Error) {
@@ -78,9 +77,9 @@ extension NoteView: UITextFieldDelegate {
     }
     
     func validateNoteTextField() -> Bool {
-        if noteTextField.isNoteValid(note: noteTextField.text ?? ""){
+        if noteTextField.isNoteValid(note: noteTextField.text ?? "") {
             return true
-        }else{
+        } else {
             noteTextField.showInvalidate()
             noteErrorLabel.text = "Can't be empty"
             return false

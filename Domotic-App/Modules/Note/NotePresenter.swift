@@ -31,13 +31,12 @@ class NotePresenter: BasePresenter, NotePresenterContract {
         }.done { [weak self] loged in
             if loged {
                 self?.view.showAlertPopUp(message: "Note was sended!!")
-            }else {self?.view.showAlertPopUp(message: "An error has occurred")}
+            } else {self?.view.showAlertPopUp(message: "An error has occurred")}
         }.catch { error in
             self.view.feedbackError(error: error)
         }
     }
 }
-
 
 // MARK: - NoteInteractorOutputContract
 extension NotePresenter: NoteInteractorOutputContract {
