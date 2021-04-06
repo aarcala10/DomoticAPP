@@ -54,6 +54,7 @@ extension RoomListView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // swiftlint:disable:next force_cast
         let cell = tableView.dequeueReusableCell(withIdentifier: RoomCell.cellId, for: indexPath) as! RoomCell
         
         cell.setUpData(room: rooms[indexPath.item])

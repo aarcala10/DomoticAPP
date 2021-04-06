@@ -127,6 +127,7 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     }
     
     @IBAction func lightSwitchAction(_ sender: UISwitch) {
+        // swiftlint:disable:next control_statement
         if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("light", "on"))
         } else {
@@ -134,6 +135,7 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         }
     }
     @IBAction func blindsSwitchAction(_ sender: UISwitch) {
+        // swiftlint:disable:next control_statement
         if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("blinds", "open"))
         } else {
@@ -141,6 +143,7 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         }
     }
     @IBAction func doorSwitchAction(_ sender: UISwitch) {
+        // swiftlint:disable:next control_statement
         if (sender.isOn == true) {
             putDetail(room: self.title!.lowercased(), detail: ("door", "open"))
         } else {
@@ -150,7 +153,8 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     
     @IBAction func airSwitchAction(_ sender: UISwitch) {
         let temp = tempPicker.selectedRow(inComponent: 0)
-        if (sender.isOn == true){
+        // swiftlint:disable:next control_statement
+        if (sender.isOn == true) {
             putAirDetail(room: self.title!.lowercased(), detail: ("on", temp))
         } else {
             putAirDetail(room: self.title!.lowercased(), detail: ("off", temp))

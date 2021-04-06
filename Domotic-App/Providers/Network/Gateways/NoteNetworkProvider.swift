@@ -39,6 +39,7 @@ class NoteNetworkProvider: NoteProviderContract {
                 parameters: parameter,
                 encoding: JSONEncoding.default,
                 headers: nil).responseJSON { response in
+                    // swiftlint:disable:next unused_optional_binding
                     guard let _ = try? response.result.get() as? [String: String] else {
                         promise.reject(NoteNetworkError.notePutError)
                         return

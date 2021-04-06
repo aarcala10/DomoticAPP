@@ -34,7 +34,8 @@ class NoteInteractor: BaseInteractor, NoteInteractorContract {
                 if isEnable {
                     self.laProvider.launchBiometricAuthentication().done { success in
                         if success {
-                            self.sendNoteAPI(note: note).done { result in
+                            // swiftlint:disable:next redundant_discardable_let
+                            let _ = self.sendNoteAPI(note: note).done { result in
                                 promise.fulfill(result)
                             }
                         } else {
