@@ -44,20 +44,6 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         self.presenter.viewWillAppear()
     }
     
-    func updateDetailsData(details: DetailRoom) {
-        self.details = details
-        self.title = self.presenter.getNameRoom().uppercased()
-        setupData()
-    }
-    
-    func showAlertPopUp(message: String) {
-        showAlert(message, "Atention", "OK")
-    }
-    
-    func feedbackError(error: Error) {
-        showAlertPopUp(message: error.localizedDescription)
-    }
-    
     private func setupView() {
         tempPicker.delegate = self
         tempPicker.dataSource = self
@@ -159,6 +145,20 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
         } else {
             putAirDetail(room: self.title!.lowercased(), detail: ("off", temp))
         }
+    }
+    
+    func updateDetailsData(details: DetailRoom) {
+        self.details = details
+        self.title = self.presenter.getNameRoom().uppercased()
+        setupData()
+    }
+    
+    func showAlertPopUp(message: String) {
+        showAlert(message, "Atention", "OK")
+    }
+    
+    func feedbackError(error: Error) {
+        showAlertPopUp(message: error.localizedDescription)
     }
 }
 

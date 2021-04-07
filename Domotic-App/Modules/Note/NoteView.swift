@@ -59,7 +59,6 @@ class NoteView: BaseViewController, NoteViewContract {
     func feedbackError(error: Error) {
         showAlert(error.localizedDescription, "Atention", "OK")
     }
-    
 }
 
 extension NoteView: UITextFieldDelegate {

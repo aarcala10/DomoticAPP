@@ -27,6 +27,13 @@ class RoomListView: BaseViewController, RoomListViewContract {
         self.presenter.viewWillAppear()
     }
     
+    private func setupTable() {
+        roomsTable.register(UINib(nibName: RoomCell.cellId, bundle: nil), forCellReuseIdentifier: RoomCell.cellId)
+
+        roomsTable.dataSource = self
+        roomsTable.delegate = self
+    }
+    
     func updateData(rooms: [Room]) {
         self.rooms = rooms
         roomsTable.reloadData()
@@ -37,13 +44,6 @@ class RoomListView: BaseViewController, RoomListViewContract {
     
     func feedbackError(error: Error) {
         showAlertPopUp(message: error.localizedDescription)
-    }
-
-    private func setupTable() {
-        roomsTable.register(UINib(nibName: RoomCell.cellId, bundle: nil), forCellReuseIdentifier: RoomCell.cellId)
-
-        roomsTable.dataSource = self
-        roomsTable.delegate = self
     }
 }
 
