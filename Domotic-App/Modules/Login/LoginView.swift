@@ -17,7 +17,7 @@ class LoginView: BaseViewController, LoginViewContract {
     @IBOutlet weak var loginViewContent: UIView!
     @IBOutlet weak var signupViewContent: UIView!
     
-        // MARK: LOGIN
+    // MARK: LOGIN
     @IBOutlet weak var userLoginField: UITextField!
     @IBOutlet weak var userloginLabel: UILabel!
     @IBOutlet weak var passwordLoginField: UITextField!
@@ -41,6 +41,8 @@ class LoginView: BaseViewController, LoginViewContract {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
         self.presenter.viewDidLoad()
     }
     
@@ -110,6 +112,10 @@ class LoginView: BaseViewController, LoginViewContract {
         emailSignupField.text?.removeAll()
         emailSignupField.rightView?.isHidden = true
         
+    }
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func pushSignupViewer(_ sender: Any) {

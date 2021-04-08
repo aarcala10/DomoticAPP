@@ -92,7 +92,7 @@ class RoomDetailView: BaseViewController, RoomDetailViewContract {
     }
     
     private func setSwitchAir() {
-
+        
         if let temp = self.details?.air.temp {
             tempPicker.selectRow(temp, inComponent: 0, animated: false)
             

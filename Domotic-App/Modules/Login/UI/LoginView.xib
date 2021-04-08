@@ -28,7 +28,7 @@
                 <outlet property="userSignUpLabel" destination="nXj-hY-dxe" id="5ab-8S-ENw"/>
                 <outlet property="userSignupField" destination="3dy-KB-Eym" id="F5q-9f-yh7"/>
                 <outlet property="userloginLabel" destination="0t8-NF-OBi" id="eTy-SF-58C"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="x0g-iT-GDb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
